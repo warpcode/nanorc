@@ -9,5 +9,8 @@ VARIABLE: "\$[@^<*]"
 ESCAPE:   "\\.?"
 COMMENT:  "(\s|^|@)#.*$"
 
-# Trailing whitespace
+# Don't expand tabs to spaces
+unset tabstospaces
+
+# Show trailing whitespace
 color ,green "[[:space:]]+$"
