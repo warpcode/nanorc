@@ -2,7 +2,7 @@ syntax "lua" "\.lua$"
 header "^#!.*lua(jit)?$"
 
 FUNCTION: "function\s+[A-Za-z0-9.:]+\s*\("
-FUNCTION: "\<(assert|collectgarbage|dofile|error|getmetatable|ipairs|load|loadfile|module|next|pairs|pcall|print|rawequal|rawget|rawset|require|select|setmetatable|tonumber|tostring|type|unpack|xpcall)\s*\("
+FUNCTION: "\<(assert|collectgarbage|dofile|error|getmetatable|ipairs|load|loadfile|module|next|pairs|pcall|print|rawequal|rawget|rawset|require|select|setmetatable|tonumber|tostring|type|unpack|xpcall)\>"
 FUNCTION: "io\.\<(close|flush|input|lines|open|output|popen|read|tmpfile|type|write|stdin|stdout|stderr)\>"
 FUNCTION: "\:\<(close|flush|lines|read|seek|setvbuf|write)\>"
 FUNCTION: "math\.\<(abs|acos|asin|atan2|atan|ceil|cosh|cos|deg|exp|floor|fmod|frexp|huge|ldexp|log10|log|max|min|mod|modf|pi|pow|rad|random|randomseed|sinh|tan)\>"
@@ -29,7 +29,4 @@ ESCAPE:   "\\('|\"|\[|\]|\\)"
 COMMENT:  "^#!.*"
 COMMENT:  "(^|\s)\-\-.*$"
 COMMENT:  start="\-\-\[\[" end="\]\]"
-COMMENT:  start="\-\-\[=\[" end="\]=\]"
-COMMENT:  start="\-\-\[==\[" end="\]==\]"
-
 +LINT
