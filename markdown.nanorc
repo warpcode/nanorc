@@ -23,7 +23,7 @@ color brightmagenta start="<" end=">"
 
 # Link
 color brightmagenta "\[.*\]\(.*\)"
-color brightmagenta "\[.*\] ?\[.*\]"
+color brightmagenta "\[[^]]*\](\s*\[[^]]*\])?"
 color brightmagenta "^\[.*\]:\s*.*"
 
 # Image
