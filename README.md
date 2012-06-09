@@ -41,6 +41,12 @@ On OSX, the default theme is `osx`, which is the same as the `light` theme
 but also removes various [nanorc] features that aren't available in the
 older versions of nano included with OSX.
 
+The features that will be removed are:
+
+* The `header` directive, used to identify file types by their Unix hashbang
+* Custom key bindings (the `bind` directive)
+* The undo/redo system (and the associated `set undo` directive)
+
 The detection of OSX is somewhat naive but will hopefully suffice until
 Apple decide to bundle a newer build of nano.
 
