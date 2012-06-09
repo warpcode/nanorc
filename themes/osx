@@ -1,0 +1,27 @@
+#!/usr/bin/sed -f
+
+# Remove some options not currently supported by nano versions in OSX
+s|^header.*||
+s|^bind.*||
+s|^set undo.*||
+
+# Copied directly from the "light" theme for the sake of simplicity
+s|^PLAIN:|color black|
+s|^TYPE:|color brightgreen|
+s|^STRING:|color yellow|
+s|^NUMBER:|color blue|
+s|^BOOLEAN:|color brightmagenta|
+s|^REGEXP:|color brightcyan|
+s|^VARIABLE:|color brightyellow|
+s|^OPERATOR:|color red|
+s|^KEYWORD:|color green|
+s|^~KEYWORD:|icolor green|
+s|^FUNCTION:|color brightblue|
+s|^ESCAPE:|color magenta|
+s|^COMMENT:|color cyan|
+s|^ENABLED:|color brightgreen|
+s|^DISABLED:|color brightred|
+s|^WARNING:|color ,red|
+s|^+TODO|color brightcyan "TODO:?"|
+s|^+LINT|color ,green "[[:space:]]+$"\ncolor ,red "\t*"|
+s|^+LONG-LINE-WARNING|color ,red "^.{81,}$"|
