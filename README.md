@@ -43,9 +43,9 @@ older versions of nano included with OSX.
 
 The features that will be removed are:
 
-* The `header` directive, used to identify file types by their Unix hashbang
-* Custom key bindings (the `bind` directive)
-* The undo/redo system (and the associated `set undo` directive)
+* All `header` patterns
+* All `bind` commands
+* The `set undo` option
 
 The detection of OSX is somewhat naive but will hopefully suffice until
 Apple decide to bundle a newer build of nano.
