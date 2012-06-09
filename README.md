@@ -31,8 +31,8 @@ source files, as `~/.nanorc` will be overwritten on subsequent builds.
 
 [main.nanorc] contains runtime options and key bindings. It can be safely
 deleted or changed according to preference. The default bindings try to stay
-close to GUI/[GNOME] conventions where possible
-(e.g. `Ctrl+S` for save, `Ctrl+O` for open).
+close to common GUI conventions where possible (e.g. `Ctrl+S` for save,
+`Ctrl+O` for open).
 
 Compatibility
 -------------
@@ -58,4 +58,3 @@ just `make install`.
 [nanorc]: http://www.nano-editor.org/dist/v2.3/nanorc.5.html
 [theme]: https://github.com/craigbarnes/nanorc/tree/master/themes
 [main.nanorc]: https://github.com/craigbarnes/nanorc/blob/master/main.nanorc
-[GNOME]: http://www.gnome.org/
