@@ -10,9 +10,9 @@ color brightgreen " __[^_]*__"
 color brightgreen " \*\*[^*]*\*\*"
 
 # Heading
-color brightblue "^====(=*)"
-color brightblue "^----(-*)"
-color brightblue "^#.*"
+SECTION: "^====(=*)"
+SECTION: "^----(-*)"
+SECTION: "^#.*"
 
 # List
 color brightgreen "^[\*+-] "
