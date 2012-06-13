@@ -1,6 +1,7 @@
 #!/usr/bin/sed -f
 
 s|^PLAIN:|color white|
+s|^SECTION:|color brightwhite|
 s|^TYPE:|color brightgreen|
 s|^STRING:|color yellow|
 s|^NUMBER:|color blue|

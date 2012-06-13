@@ -7,6 +7,7 @@ s|^set undo.*||
 
 # Copied directly from the "light" theme for the sake of simplicity
 s|^PLAIN:|color black|
+s|^SECTION:|color brightblack|
 s|^TYPE:|color brightgreen|
 s|^STRING:|color yellow|
 s|^NUMBER:|color blue|
