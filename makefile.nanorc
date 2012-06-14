@@ -2,7 +2,7 @@ syntax "makefile" "[Mm]akefile$" "\.mk$"
 
 KEYWORD:  "\<(ifeq|ifdef|ifneq|ifndef|else|endif)\>"
 SECTION:  "^[^   ]+:"
-OPERATOR: "[=,%]" "\+=|\?=|:="
+OPERATOR: "[=,%]" "\+=|\?=|:=|&&|\|\|"
 FUNCTION: "\$\((addprefix|patsubst|shell|sort|wildcard)\s"
 PLAIN:    "[()$]"
 STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"
