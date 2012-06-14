@@ -1,8 +1,0 @@
-syntax "emacs" "emacs$" "\.el$"
-
-NUMBER:   "\<([0-9]+)\>"
-STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"
-ESCAPE:   "\\.?"
-COMMENT:  "([[:space:]]|^);.*"
-
-+LINT
