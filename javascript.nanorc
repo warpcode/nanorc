@@ -15,6 +15,6 @@ STRING:   "L?\"(\\"|[^"])*\""
 STRING:   "L?'(\'|[^'])*'"
 ESCAPE:   "\\[0-7][0-7]?[0-7]?|\\x[0-9a-fA-F]+|\\[bfnrt'"\?\\]"
 COMMENT:  start="/\*" end="\*/"
-COMMENT:  "//.*$"
+COMMENT:  "(^|\s)//.*$"
 
 +LINT
