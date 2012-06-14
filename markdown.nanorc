@@ -1,8 +1,6 @@
 syntax "markdown" "\.(md|mkd|mkdn|markdown)$"
 
-color green " _[^_]*_| \*[^*]*\*"
-color brightgreen " __[^_]*__| \*\*[^*]*\*\*"
-
+FUNCTION: "(^|\s)_[^_]+_|(^|\s)\*[^*]+\*|(^|\s)__[^_]+__|(^|\s)\*\*[^*]+\*\*"
 STRING:   "^>.*"
 SECTION:  "^====(=*)|^----(-*)|^#.*"
 NUMBER:   "^[\*+-] |^[0-9]+\. "
