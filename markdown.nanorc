@@ -1,36 +1,16 @@
 syntax "markdown" "\.(md|mkd|mkdn|markdown)$"
 
-# Quotation
-color cyan "^>.*"
+color green " _[^_]*_| \*[^*]*\*"
+color brightgreen " __[^_]*__| \*\*[^*]*\*\*"
 
-# Emphasis
-color green " _[^_]*_"
-color green " \*[^*]*\*"
-color brightgreen " __[^_]*__"
-color brightgreen " \*\*[^*]*\*\*"
-
-# Heading
-SECTION: "^====(=*)"
-SECTION: "^----(-*)"
-SECTION: "^#.*"
-
-# List
-color brightgreen "^[\*+-] "
-color brightgreen "^[0-9]+\. "
-
-# URL or HTML
-color brightmagenta start="<" end=">"
-
-# Link
-color brightmagenta "\[.*\]\(.*\)"
-color brightmagenta "\[[^]]*\](\s*\[[^]]*\])?"
-color brightmagenta "^\[.*\]:\s*.*"
-
-# Image
-color brightmagenta "!\[.*\]\(.*\)"
-
-# Code
-color cyan "`[^`]*`"
-color cyan "^    .*"
+STRING:   "^>.*"
+SECTION:  "^====(=*)|^----(-*)|^#.*"
+NUMBER:   "^[\*+-] |^[0-9]+\. "
+VARIABLE: "\[.*\]\(.*\)"
+VARIABLE: "\[[^]]*\](\s*\[[^]]*\])?"
+VARIABLE: "^\[.*\]:\s*.*"
+VARIABLE: "!\[.*\]\(.*\)"
+VARIABLE: start="<" end=">"
+KEYWORD:  "`[^`]*`|^ {4}.*"
 
 +LINT
