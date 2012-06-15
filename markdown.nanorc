@@ -8,7 +8,7 @@ VARIABLE: "\[[^]]*\](\s*\[[^]]*\])?"
 VARIABLE: "^\[.*\]:\s*.*"
 VARIABLE: "!\[.*\]\(.*\)"
 VARIABLE: start="<" end=">"
-STRING:   "`[^`]*`|^ {4}.*"
+STRING:   "`[^`]*`|^ {4}[^-+*].*"
 COMMENT:  "^>.*"
 
 +LINT
