@@ -3,11 +3,10 @@ header "^---" "%YAML"
 
 TYPE:     "(^| )!!(binary|bool|float|int|map|null|omap|seq|set|str) "
 BOOLEAN:  "\<(YES|yes|Y|y|TRUE|true|ON|on|NO|no|N|n|FALSE|false|OFF|off)\>"
-OPERATOR: ":[[:space:]]" "\[" "\]" ":[[:space:]]+[|>]" "^[[:space:]]*- "
-VARIABLE: "[[:space:]][\*&][A-Za-z0-9]+"
-STRING:   "[[:space:]]*"(\\.|[^"])*"($|[[:space:]])"
-STRING:   "[[:space:]]*'(\\.|[^'])*'($|[[:space:]])"
-COMMENT:  "(^|[[:space:]])#.*$"
+OPERATOR: ":\s" "\[" "\]" ":\s+[|>]" "^\s*- "
+VARIABLE: "\s[\*&][A-Za-z0-9]+"
+STRING:   "\s*"(\\.|[^"])*"($|\s)|\s*'(\\.|[^'])*'($|\s)"
+COMMENT:  "(^|\s)#.*$"
 FUNCTION: "^---" "^\.\.\." "^%YAML" "^%TAG"
 
 +LINT
