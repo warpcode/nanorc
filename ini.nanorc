@@ -1,7 +1,7 @@
 syntax "ini" "\.(desktop|ini|override|repo)$" "gitconfig$"
 
 OPERATOR: "[=;]" "\[" "\]"
-BOOLEAN:  "\<(true|false)\>"
+CONSTANT: "\<(true|false)\>"
 VARIABLE: "^\s*[^=]*="
 SECTION:  "^\[.*\]$"
 STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"

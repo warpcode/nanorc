@@ -24,7 +24,7 @@ TYPE:     "\<(VARCHAR|TINYINT|TEXT|DATE|SMALLINT|MEDIUMINT|INT|BIGINT|FLOAT|DOUB
 ~KEYWORD: "\.\<(databases|dump|echo|exit|explain|header(s)?|help)\>"
 ~KEYWORD: "\.\<(import|indices|mode|nullvalue|output|prompt|quit|read)\>"
 ~KEYWORD: "\.\<(schema|separator|show|tables|timeout|width)\>"
-BOOLEAN:  "\<(ON|OFF)\>"
+CONSTANT: "\<(ON|OFF)\>"
 
 NUMBER:   "\<([0-9]+)\>"
 STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'|`(\\.|[^\\`])*`"

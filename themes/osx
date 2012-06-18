@@ -11,7 +11,7 @@ s|^SECTION:|color brightmagenta|
 s|^TYPE:|color brightgreen|
 s|^STRING:|color yellow|
 s|^NUMBER:|color blue|
-s|^BOOLEAN:|color brightmagenta|
+s|^CONSTANT:|color brightmagenta|
 s|^REGEXP:|color brightcyan|
 s|^VARIABLE:|color brightyellow|
 s|^OPERATOR:|color red|

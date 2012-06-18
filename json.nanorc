@@ -1,8 +1,7 @@
 syntax "json" "\.json$"
 
 NUMBER:   "\<[-]?[1-9][0-9]*([Ee][+-]?[0-9]+)?\>"  "\<[-]?[0](\.[0-9]+)?\>"
-BOOLEAN:  "\<(true|false)\>"
-KEYWORD:  "\<null\>"
+CONSTANT: "\<(true|false|null)\>"
 STRING:   "\"(\\"|[^"])*\""  "'(\'|[^'])*'"
 VARIABLE: "\"(\\"|[^"])*\"\s*:"  "'(\'|[^'])*'\s*:"
 ESCAPE:   "\\u[0-9a-fA-F]{4}|\\[bfnrt'"/\\]"
