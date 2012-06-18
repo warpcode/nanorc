@@ -4,6 +4,6 @@ header "^#!.*bin/sed"
 OPERATOR: "[|^$.*+]"
 VARIABLE: "\{[0-9]+,?[0-9]*\}"
 ESCAPE:   "\\."
-COMMENT:  "(^|[[:space:]])#.*$"
+COMMENT:  "(^|\s)#.*$"
 +LINT
 +TODO

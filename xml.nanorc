@@ -7,5 +7,4 @@ STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"
 ESCAPE:   "&[^;]*;"
 COMMENT:  start="<!--" end="-->"
 COMMENT:  start="<!DOCTYPE" end=">"
-
 +LINT

@@ -6,6 +6,5 @@ KEYWORD:  "^(After|Before|BusName|Conflicts|DefaultDependencies|ExecReload|ExecS
 OPERATOR: "="
 FUNCTION: "^\[(Unit|Install|Service)\]$"
 VARIABLE: "\$MAINPID"
-COMMENT:  "(^|[[:space:]])#.*$"
-
+COMMENT:  "(^|\s)#.*$"
 +LINT

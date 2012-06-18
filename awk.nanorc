@@ -19,5 +19,4 @@ FUNCTION: "\<(bindtextdomain|dcgettext|dcngettext)\>"
 STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"
 ESCAPE:   "\\."
 COMMENT:  "(^|\s)#.*$"
-
 +LINT

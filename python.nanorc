@@ -12,5 +12,4 @@ STRING:   start=""""[^"]" end="""""
 STRING:   start="'''[^']" end="'''"
 ESCAPE:   "\\.?"
 COMMENT:  "#.*$"
-
 +LINT

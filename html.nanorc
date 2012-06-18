@@ -9,5 +9,4 @@ SECTION:  "[<>]"
 STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"
 COMMENT:  start="<!--" end="-->"
 COMMENT:  "<!(doctype|DOCTYPE)[^>]*>"
-
 +LINT

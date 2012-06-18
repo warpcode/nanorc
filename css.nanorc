@@ -13,5 +13,4 @@ TYPE:     "^\s*@(charset|font-face|media|page|import)\>"
 FUNCTION: "[a-z-]*(-[a-z]+)?\(" "\(|\)"
 STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"
 COMMENT:  start="/\*" end="\*/"
-
 +LINT

@@ -46,5 +46,5 @@ bind F12 autoindent main
 # Default highlighting
 syntax "default"
 ESCAPE:  "\\.?"
-COMMENT: "(^|[[:space:]])#.*$"
+COMMENT: "(^|\s)#.*$"
 +LINT

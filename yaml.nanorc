@@ -8,5 +8,4 @@ VARIABLE: "\s[\*&][A-Za-z0-9]+"
 STRING:   "\s*"(\\.|[^"])*"($|\s)|\s*'(\\.|[^'])*'($|\s)"
 COMMENT:  "(^|\s)#.*$"
 FUNCTION: "^---" "^\.\.\." "^%YAML" "^%TAG"
-
 +LINT

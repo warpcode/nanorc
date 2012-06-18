@@ -8,5 +8,4 @@ BOOLEAN:  "\<(nil|NIL|t|T)\>"
 STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"  "'[A-Za-z][A-Za-z0-9_-]*"
 ESCAPE:   "\\.?"
 COMMENT:  "(^|\s);.*"
-
 +LINT

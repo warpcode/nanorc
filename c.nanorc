@@ -10,10 +10,9 @@ OPERATOR: "[-+/*=<>?:!~%&|]"
 NUMBER:   "\<([0-9]+|0x[0-9a-fA-F]*)\>"
 COMMENT:  "^\s*#\s*(define|include(_next)?|(un|ifn?)def|endif|el(if|se)|if|warning|error|pragma).*"
 VARIABLE: "\<[A-Z_][0-9A-Z_]+\>"
-WARNING:  "__attribute__[[:space:]]*\(\([^)]*\)\)" "__(aligned|asm|builtin|hidden|inline|packed|restrict|section|typeof|weak)__"
+WARNING:  "__attribute__\s*\(\([^)]*\)\)" "__(aligned|asm|builtin|hidden|inline|packed|restrict|section|typeof|weak)__"
 STRING:   ""(\\.|[^"])*""
 ESCAPE:   "\\([\"'abfnrtv\\]|[0-3]?[0-7]{1,2}|x[A-Fa-f0-9]{1,2})"
 COMMENT:  "(^|\s)//.*"
 COMMENT:  start="/\*" end="\*/"
-
 +LINT
