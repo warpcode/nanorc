@@ -6,6 +6,7 @@ SECTION:  ">" "</?(a|abbr|address|area|article|aside|audio|b|base|bdo|blockquote
 OPERATOR: "="
 PLAIN:    start=">" end="<"
 SECTION:  "[<>]"
+ESCAPE:   "&(#[0-9]+|[A-Za-z]+);"
 STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"
 COMMENT:  start="<!--" end="-->"
 COMMENT:  "<!(doctype|DOCTYPE)[^>]*>"
