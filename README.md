@@ -37,7 +37,7 @@ close to common GUI conventions where possible (e.g. `Ctrl+S` for save,
 Compatibility
 -------------
 
-On OSX, the default theme is `osx`, which is the same as the `light` theme
+On OSX, the default theme is `osx`, which is the same as the `dark` theme
 but also removes various [nanorc] features that aren't available in the
 older versions of nano included with OSX.
 
