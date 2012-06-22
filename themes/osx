@@ -5,7 +5,6 @@ s|^header.*||
 s|^bind.*||
 s|^set undo.*||
 
-# Copied directly from the "light" theme for the sake of simplicity
 s|^PLAIN:|color white|
 s|^SECTION:|color brightwhite|
 s|^TYPE:|color brightgreen|
