@@ -6,7 +6,7 @@ s|^bind.*||
 s|^set undo.*||
 
 s|^PLAIN:|color white|
-s|^SECTION:|color brightwhite|
+s|^SECTION:|color brightmagenta|
 s|^TYPE:|color brightgreen|
 s|^STRING:|color yellow|
 s|^NUMBER:|color blue|
