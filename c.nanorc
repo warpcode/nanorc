@@ -1,8 +1,8 @@
 syntax "c" "\.(c(c|pp|xx)?|C)$" "\.(h(h|pp|xx)?|H)$" "\.ii?$"
 
-TYPE:     "\<(float|double|bool|char|int|short|long|void|struct)\>"
-TYPE:     "\<(enum|static|const|union|typedef|extern|(un)?signed)\>"
-TYPE:     "\<((s?size)|((u_?)?int(8|16|32|64|ptr)))_t\>" "\<[a-z_]+_t\>"
+TYPE:     "\<(float|double|bool|char|int|short|long|void|(un)?signed)\>"
+TYPE:     "\<[a-z0-9_]+_t\>"
+KEYWORD:  "\<(struct|enum|static|const|union|typedef|extern)\>"
 KEYWORD:  "\<(for|if|while|do|else|case|default|switch)\>"
 KEYWORD:  "\<(goto|continue|break|return|inline|sizeof)\>"
 KEYWORD:  "\<(try|throw|catch|operator|new|delete)\>"
