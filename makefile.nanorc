@@ -1,4 +1,5 @@
-syntax "makefile" "[Mm]akefile$" "\.mk$"
+syntax "makefile" "([Mm]akefile|\.ma?k)$"
+header "^#!.*/[bg]?make"
 
 KEYWORD:  "\<(ifeq|ifdef|ifneq|ifndef|else|endif|override)\>"
 SECTION:  "^[^   ]+:"
