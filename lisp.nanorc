@@ -5,7 +5,7 @@ OPERATOR: "\([-+*/<>]"
 PLAIN:    "\("
 NUMBER:   "\<[0-9]+\>"
 CONSTANT: "\<(nil|NIL|t|T)\>"
-STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"  "'[A-Za-z][A-Za-z0-9_-]*"
+STRING:   "\"(\\.|[^\\\"])*\"|'[A-Za-z][A-Za-z0-9_-]*|'\([^)]*\)"
 ESCAPE:   "\\.?"
 COMMENT:  "(^|\s);.*"
 +LINT
