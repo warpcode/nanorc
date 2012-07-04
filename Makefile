@@ -1,12 +1,9 @@
 THEME = light
 
+install: themes/$(THEME)
+	$< *.nanorc > ~/.nanorc
 ifeq ($(shell uname),Darwin)
-    THEME = osx
+	sed -i '/^header.*/d;/^bind.*/d;/^set undo.*/d' ~/.nanorc
 endif
-
-install: themes/$(THEME) *.nanorc
-	@$^ > ~/.nanorc
-	@echo 'Installed nanorc using "$(THEME)" theme'
-
 
 .PHONY: install

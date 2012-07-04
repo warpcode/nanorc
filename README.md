@@ -25,9 +25,7 @@ Alternatively, use `make install THEME=light`, where `light` is the name of
 a [theme].
 
 The build system will concatenate all `.nanorc` files together, apply the
-selected (or default) theme and install everything as a bundle to
-`~/.nanorc`. Obviously any customizations should be done in the original
-source files, as `~/.nanorc` will be overwritten on subsequent builds.
+theme and install everything as a bundle to `~/.nanorc`.
 
 [main.nanorc] contains runtime options and key bindings. It can be safely
 deleted or changed according to preference. The default bindings try to stay
@@ -37,22 +35,14 @@ close to common GUI conventions where possible (e.g. `Ctrl+S` for save,
 Compatibility
 -------------
 
-On OSX, the default theme is `osx`, which is the same as the `dark` theme
-but also removes various [nanorc] features that aren't available in the
-older versions of nano included with OSX.
+The current builds of Nano included with OSX are quite old and lack support
+for various [nanorc] features used by this project. To work around this issue,
+when installing on OSX, the build process will automatically strip out the
+following features:
 
-The features that will be removed are:
-
-* All `header` patterns
+* All `header` commands
 * All `bind` commands
 * The `set undo` option
-
-The detection of OSX is somewhat naive but will hopefully suffice until
-Apple decide to bundle a newer build of nano.
-
-Any manually specified theme will still override this default, so OSX users
-who haven't compiled a newer version of nano themselves should install using
-just `make install`.
 
 [GNU nano]: http://www.nano-editor.org/
 [nanorc]: http://www.nano-editor.org/dist/v2.3/nanorc.5.html
