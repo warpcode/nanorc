@@ -10,7 +10,6 @@ s|^SECTION:|color brightmagenta|
 s|^TYPE:|color brightgreen|
 s|^STRING:|color yellow|
 s|^NUMBER:|color blue|
-s|^CONSTANT:|color brightmagenta|
 s|^REGEXP:|color brightcyan|
 s|^VARIABLE:|color brightyellow|
 s|^OPERATOR:|color red|
