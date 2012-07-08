@@ -1,7 +1,7 @@
 syntax "makefile" "([Mm]akefile|\.ma?k)$"
 header "^#!.*/[bg]?make"
 
-KEYWORD:  "\<(ifeq|ifdef|ifneq|ifndef|else|endif|override)\>"
+KEYWORD:  "\<(ifeq|ifdef|ifneq|ifndef|else|endif)\>|^override\>"
 SECTION:  "^[^   ]+:"
 OPERATOR: "[=,%]" "\+=|\?=|:=|&&|\|\|"
 FUNCTION: "\$\((abspath|addprefix|addsuffix|and|basename|call|dir|error)\s"
