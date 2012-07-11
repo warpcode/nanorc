@@ -17,5 +17,5 @@ s|^ENABLED:|color brightgreen|
 s|^DISABLED:|color brightred|
 s|^WARNING:|color ,red|
 s|^+TODO|color brightcyan "TODO:?"|
-s|^+LINT|color ,green "\s+$"\ncolor ,red "\t*"|
+s|^+LINT|color ,green "\\s+$"\ncolor ,red "\t*"|
 s|^+LONG-LINE-WARNING|color ,red "^.{81,}$"|
