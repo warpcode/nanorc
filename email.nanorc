@@ -1,5 +1,5 @@
 syntax "email"
 
-color green "^>([^>].*|$)"
+color magenta "^>([^>].*|$)"
 color blue "^>>([^>].*|$)"
-color magenta "^>>>.*"
+color green "^>>>.*"
