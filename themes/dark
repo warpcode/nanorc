@@ -11,6 +11,7 @@ s|^OPERATOR:|color red|
 s|^KEYWORD:|color green|
 s|^~KEYWORD:|icolor green|
 s|^FUNCTION:|color brightblue|
+s|^MACRO:|color brightyellow|
 s|^ESCAPE:|color magenta|
 s|^COMMENT:|color cyan|
 s|^ENABLED:|color brightgreen|
