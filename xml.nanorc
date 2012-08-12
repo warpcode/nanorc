@@ -1,4 +1,4 @@
-syntax "xml" "\.([jrs]html?|sgml?|xml|opml|xslt?)$"
+syntax "xml" "\.([jrs]html?|sgml?|xml|opml|xslt?|plist)$"
 header "<\?xml"
 
 SECTION:  start="<" end=">"
