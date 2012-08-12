@@ -1,5 +1,5 @@
 syntax "makefile" "([Mm]akefile|\.ma?k)$"
-header "^#!.*/[bg]?make"
+header "^#!.*/(env\s*)?[bg]?make"
 
 KEYWORD:  "\<(ifeq|ifdef|ifneq|ifndef|else|endif)\>|^override\>"
 SECTION:  "^[^   ]+:"
