@@ -11,6 +11,6 @@ NUMBER:   "#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})\>"
 WARNING:  "\!important\>"
 KEYWORD:  "^\s*@(charset|font-face|media|page|import)\>"
 FUNCTION: "[a-z-]*(-[a-z]+)?\(" "\(|\)"
-STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"
++STRING
 COMMENT:  start="/\*" end="\*/"
 +LINT

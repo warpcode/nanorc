@@ -6,7 +6,7 @@ KEYWORD:  "^(bind|i?color|set|unset|include|syntax|header|magic)\>"
 KEYWORD:  "^i?color\>" "\<(start|end)="
 KEYWORD:  "^(PLAIN|TYPE|STRING|MACRO|NUMBER|VARIABLE|OPERATOR|~?KEYWORD):"
 KEYWORD:  "^(SECTION|REGEXP|FUNCTION|ESCAPE|COMMENT|ENABLED|DISABLED|WARNING):"
-FUNCTION: "^\+(TODO|LINT)$"
+FUNCTION: "^\+(TODO|LINT|STRING)$"
 ESCAPE:   "\\.?"
 COMMENT:  "^#.*$"
 +LINT

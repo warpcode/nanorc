@@ -10,7 +10,7 @@ FUNCTION: "\$\((foreach|if|info|join|lastword|notdir|or|origin|patsubst)\s"
 FUNCTION: "\$\((realpath|shell|sort|strip|suffix|value|warning)\s"
 FUNCTION: "\$\((wildcard|word|wordlist|words)\s"
 PLAIN:    "[()$]"
-STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"
++STRING
 VARIABLE: "\$+\{[A-Za-z0-9_.-]+\}|\$+\([A-Za-z0-9_.-]+\)"
 VARIABLE: "\$[@^<*?%|+]|\$\([@^<*?%+-][DF]\)"
 ESCAPE:   "\$\$|\\.?"

@@ -11,7 +11,7 @@ TYPE:     "\<(Array|Boolean|Date|Enumerator|Error|Function|Math)\>"
 TYPE:     "\<(Number|Object|RegExp|String)\>"
 OPERATOR: "[-+/*=<>!~%?:&|]"
 REGEXP:   "/[^*]([^/]|(\\/))*[^\\]/[gim]*"
-STRING:   "L?\"(\\"|[^"])*\""  "L?'(\'|[^'])*'"
++STRING
 ESCAPE:   "\\[0-7][0-7]?[0-7]?|\\x[0-9a-fA-F]+|\\[bfnrt'"\?\\]"
 COMMENT:  start="/\*" end="\*/"
 COMMENT:  "(^|\s)//.*$"

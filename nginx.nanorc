@@ -5,7 +5,7 @@ KEYWORD:  "(^|\s|\{|;)(access_log|add_after_body|add_before_body|add_header|addi
 VARIABLE: "\$(arg_PARAMETER|args|binary_remote_addr|body_bytes_sent|content_length|content_type|cookie_COOKIE|document_root|document_uri|host|hostname|http_HEADER|sent_http_HEADER|is_args|limit_rate|nginx_version|query_string|remote_addr|remote_port|remote_user|request_filename|request_body|request_body_file|request_completion|request_method|request_uri|scheme|server_addr|server_name|server_port|server_protocol|uri)"
 VARIABLE: "\$(pid|realpath_root)"
 OPERATOR: "[;{}]"
-STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"
++STRING
 STRING:   start="'$" end="';$"
 COMMENT:  "(^|\s)#.*$"
 +LINT

@@ -10,7 +10,7 @@ KEYWORD:  "\<(class|override|private|public|signal|this|weak)\>"
 KEYWORD:  "\<(true|false|null)\>"
 NUMBER:   "\<([0-9]+)\>"
 OPERATOR: "[-+/*=<>?:!~%&|]" "->"
-STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"
++STRING
 COMMENT:  "//.*"
 COMMENT:  start="/\*" end="\*/"
 +TODO

@@ -27,6 +27,7 @@ TYPE:     "\<(VARCHAR|TINYINT|TEXT|DATE|SMALLINT|MEDIUMINT|INT|BIGINT|FLOAT|DOUB
 KEYWORD:  "\<(ON|OFF)\>"
 
 NUMBER:   "\<([0-9]+)\>"
-STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'|`(\\.|[^\\`])*`"
++STRING
+STRING:   "`(\\.|[^\\`])*`"
 COMMENT:  "\-\-.*$"
 +LINT

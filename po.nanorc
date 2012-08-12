@@ -1,7 +1,7 @@
 syntax "po" "\.pot?$"
 
 KEYWORD:  "\<(msgid|msgstr)\>"
-STRING:   ""(\\.|[^"])*"|'(\\.|[^'])*'"
++STRING
 ESCAPE:   "\\.?"
 COMMENT:  "(^|\s)#.*$"
 +LINT

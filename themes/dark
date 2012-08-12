@@ -17,6 +17,7 @@ s|^COMMENT:|color cyan|
 s|^ENABLED:|color brightgreen|
 s|^DISABLED:|color brightred|
 s|^WARNING:|color ,red|
+s/^+STRING/color yellow ""(\\\\.|[^"])*"|'(\\\\.|[^'])*'"/
 s|^+TODO|color brightcyan "TODO:?"|
 s|^+LINT|color ,green "\\s+$"\ncolor ,red "\t*"|
 s|^+LONG-LINE-WARNING|color ,red "^.{81,}$"|

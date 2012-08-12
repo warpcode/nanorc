@@ -4,6 +4,6 @@ OPERATOR: "[=;]" "\[" "\]"
 KEYWORD:  "\<(true|false)\>"
 VARIABLE: "^\s*[^=]*="
 SECTION:  "^\[.*\]$"
-STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"
++STRING
 COMMENT:  "#.*$"
 +LINT

@@ -9,7 +9,7 @@ KEYWORD:  "\<(package|import|const|var|type|struct|func|go|defer)\>"
 KEYWORD:  "\<(for|range|if|else|case|default|switch|continue|break|return)\>"
 KEYWORD:  "\<(true|false|nil|iota)\>"
 OPERATOR: "[-+/*=<>!~%&|^]|:="
-STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"
++STRING
 COMMENT:  "(^|\s)//.*"
 COMMENT:  start="/\*" end="\*/"
 +LINT

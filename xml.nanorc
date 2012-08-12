@@ -3,7 +3,7 @@ header "<\?xml"
 
 SECTION:  start="<" end=">"
 KEYWORD:  " [a-z_-]+="
-STRING:   "\"(\\.|[^\\\"])*\"|'(\\.|[^\\'])*'"
++STRING
 ESCAPE:   "&[^;]*;"
 COMMENT:  start="<!--" end="-->"
 COMMENT:  start="<!DOCTYPE" end=">"

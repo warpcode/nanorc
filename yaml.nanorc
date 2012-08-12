@@ -5,7 +5,7 @@ TYPE:     "(^| )!!(binary|bool|float|int|map|null|omap|seq|set|str) "
 KEYWORD:  "\<(YES|yes|Y|y|TRUE|true|ON|on|NO|no|N|n|FALSE|false|OFF|off)\>"
 OPERATOR: ":\s" "\[" "\]" ":\s+[|>]" "^\s*- "
 VARIABLE: "\s[\*&][A-Za-z0-9]+"
-STRING:   "\s*"(\\.|[^"])*"($|\s)|\s*'(\\.|[^'])*'($|\s)"
++STRING
 COMMENT:  "(^|\s)#.*$"
 FUNCTION: "^---" "^\.\.\." "^%YAML" "^%TAG"
 +LINT
