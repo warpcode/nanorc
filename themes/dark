@@ -1,23 +1,3 @@
-#!/usr/bin/sed -f
+#!/usr/bin/env sh
 
-s|^PLAIN:|color white|
-s|^SECTION:|color brightwhite|
-s|^TYPE:|color brightgreen|
-s|^STRING:|color yellow|
-s|^NUMBER:|color blue|
-s|^REGEXP:|color brightcyan|
-s|^VARIABLE:|color brightyellow|
-s|^OPERATOR:|color red|
-s|^KEYWORD:|color green|
-s|^~KEYWORD:|icolor green|
-s|^FUNCTION:|color brightblue|
-s|^MACRO:|color brightyellow|
-s|^ESCAPE:|color magenta|
-s|^COMMENT:|color cyan|
-s|^ENABLED:|color brightgreen|
-s|^DISABLED:|color brightred|
-s|^WARNING:|color ,red|
-s/^+STRING/color yellow ""(\\\\.|[^"])*"|'(\\\\.|[^'])*'"/
-s|^+TODO|color brightcyan "TODO:?"|
-s|^+LINT|color ,green "\\s+$"\ncolor ,red "\t*"|
-s|^+LONG-LINE-WARNING|color ,red "^.{81,}$"|
+themes/light $@ | sed 's|^color black|color white|'
