@@ -42,6 +42,7 @@ bind ^] findbracket main
 bind ^C cancel all
 bind ^T verbatim main
 bind F5 refresh all
+bind F8 autoindent main
 bind F12 autoindent main
 
 # Default highlighting
