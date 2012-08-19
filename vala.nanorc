@@ -5,9 +5,9 @@ FUNCTION: "\<(assert|warning)\s*\("
 PLAIN:    "[(]"
 KEYWORD:  "\<(for|if|while|do|else|case|default|switch)\>"
 KEYWORD:  "\<(try|throw|catch|operator|new|delete)\>"
-KEYWORD:  "\<(goto|continue|break|return)\>"
+KEYWORD:  "\<(goto|continue|break|return|null)\>"
 KEYWORD:  "\<(class|override|private|public|signal|this|weak)\>"
-KEYWORD:  "\<(true|false|null)\>"
++BOOLEAN
 NUMBER:   "\<([0-9]+)\>"
 OPERATOR: "[-+/*=<>?:!~%&|]" "->"
 +STRING

@@ -3,7 +3,8 @@ header "^#!.*lua(jit)?$"
 
 FUNCTION: "[A-Za-z_][A-Za-z0-9_]*\s*([({'"]|\[=*\[)"
 KEYWORD:  "\<(do|end|while|repeat|until|if|elseif|then|else)\>"
-KEYWORD:  "\<(for|in|function|local|return|break|true|false|nil)\>"
+KEYWORD:  "\<(for|in|function|local|return|break|nil)\>"
++BOOLEAN
 OPERATOR: "[-+:*/%^=#<>(){}]|~=|\.\.|\[|\]|\<(not|and|or)\>"
 PLAIN:    "\.{3,}"
 NUMBER:   "\<([0-9]+)(\.[0-9]+)?([Ee][+-]?[0-9]+)?\>|0x[0-9a-fA-F]*"

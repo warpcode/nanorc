@@ -5,6 +5,8 @@ s|^TYPE:|color brightgreen|
 s|^STRING:|color yellow|
 s/^+STRING/color yellow ""(\\\\.|[^"])*"|'(\\\\.|[^'])*'"/
 s|^NUMBER:|color blue|
+s|^BOOLEAN:|color brightmagenta|
+s|^+BOOLEAN|color brightmagenta "\\<(true\|false)\\>"|
 s|^REGEXP:|color magenta|
 s|^VARIABLE:|color brightyellow|
 s|^OPERATOR:|color red|
