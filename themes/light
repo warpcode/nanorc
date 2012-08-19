@@ -1,9 +1,9 @@
 #!/usr/bin/sed -f
 
 s|^PLAIN:|color black|
-s|^SECTION:|color brightmagenta|
 s|^TYPE:|color brightgreen|
 s|^STRING:|color yellow|
+s/^+STRING/color yellow ""(\\\\.|[^"])*"|'(\\\\.|[^'])*'"/
 s|^NUMBER:|color blue|
 s|^REGEXP:|color magenta|
 s|^VARIABLE:|color brightyellow|
@@ -14,10 +14,10 @@ s|^FUNCTION:|color brightblue|
 s|^MACRO:|color brightyellow|
 s|^ESCAPE:|color magenta|
 s|^COMMENT:|color cyan|
-s|^ENABLED:|color brightgreen|
-s|^DISABLED:|color brightred|
 s|^WARNING:|color brightred|
-s/^+STRING/color yellow ""(\\\\.|[^"])*"|'(\\\\.|[^'])*'"/
+
+s|^SECTION:|color brightmagenta|
+
 s|^+TODO|color brightcyan "TODO:?"|
 s|^+LINT|color ,green "\\s+$"\ncolor ,red "\t*"|
 s|^+LONG-LINE-WARNING|color ,red "^.{81,}$"|

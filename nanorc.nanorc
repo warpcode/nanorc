@@ -5,7 +5,7 @@ KEYWORD:  "^(set|unset)\s+(allow_insecure_backup|autoindent|backup|backupdir|bac
 KEYWORD:  "^(bind|i?color|set|unset|include|syntax|header|magic)\>"
 KEYWORD:  "^i?color\>" "\<(start|end)="
 KEYWORD:  "^(PLAIN|TYPE|STRING|MACRO|NUMBER|VARIABLE|OPERATOR|~?KEYWORD):"
-KEYWORD:  "^(SECTION|REGEXP|FUNCTION|ESCAPE|COMMENT|ENABLED|DISABLED|WARNING):"
+KEYWORD:  "^(SECTION|REGEXP|FUNCTION|ESCAPE|COMMENT|WARNING):"
 FUNCTION: "^\+(TODO|LINT|STRING)$"
 ESCAPE:   "\\.?"
 COMMENT:  "^#.*$"
