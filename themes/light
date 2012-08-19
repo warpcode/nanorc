@@ -16,7 +16,7 @@ s|^ESCAPE:|color magenta|
 s|^COMMENT:|color cyan|
 s|^ENABLED:|color brightgreen|
 s|^DISABLED:|color brightred|
-s|^WARNING:|color ,red|
+s|^WARNING:|color brightred|
 s/^+STRING/color yellow ""(\\\\.|[^"])*"|'(\\\\.|[^'])*'"/
 s|^+TODO|color brightcyan "TODO:?"|
 s|^+LINT|color ,green "\\s+$"\ncolor ,red "\t*"|
