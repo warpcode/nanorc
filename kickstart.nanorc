@@ -5,6 +5,6 @@ KEYWORD:  "^\s*(install|cdrom|text|graphical|volgroup|logvol|reboot|timezone|lan
 KEYWORD:  "--(name|mirrorlist|baseurl|utc)(=|\>)"
 FUNCTION: "^@[A-Za-z][A-Za-z-]*"
 VARIABLE: "\$(releasever|basearch)\>"
-DISABLED: "^-@?[a-zA-Z0-9-]+"
+WARNING:  "^-@?[a-zA-Z0-9-]+"
 COMMENT:  "(^|\s)#.*$"
 +LINT
