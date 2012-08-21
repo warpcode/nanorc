@@ -1,8 +1,8 @@
 syntax "go" "\.go$"
 
-FUNCTION: "\<\w+\s*\(|\<(append|cap|close|complex|copy|delete|imag|len)\>"
++FUNCTION
+FUNCTION: "\<(append|cap|close|complex|copy|delete|imag|len)\>"
 FUNCTION: "\<(make|new|panic|print|println|protect|real|recover)\>"
-PLAIN:    "\("
 TYPE:     "\<(u?int(8|16|32|64)?|float(32|64)|complex(64|128))\>"
 TYPE:     "\<(uintptr|byte|rune|string|interface|bool|map|chan|error)\>"
 KEYWORD:  "\<(package|import|const|var|type|struct|func|go|defer|nil|iota)\>"

@@ -1,8 +1,7 @@
 syntax "c" "\.(c(c|pp|xx)?|C)$" "\.(h(h|pp|xx)?|H)$" "\.ii?$"
 
 MACRO:    "\<[A-Z_][0-9A-Z_]+\>"
-FUNCTION: "[A-Za-z0-9_]+\s*\("
-PLAIN:    "\s*\("
++FUNCTION
 TYPE:     "\<(float|double|bool|char|int|short|long|void|(un)?signed)\>"
 TYPE:     "\<[a-z0-9_]+_t\>"
 KEYWORD:  "\<(struct|enum|static|const|union|typedef|extern)\>"
