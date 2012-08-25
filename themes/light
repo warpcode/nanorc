@@ -23,7 +23,7 @@ s|^KEYWORD:|color green|
 s|^~KEYWORD:|icolor green|
 s|^MACRO:|color brightyellow|
 s|^ESCAPE:|color magenta|
-s|^WARNING:|color brightred|
+s|^WARNING:|color brightwhite,red|
 s|^SECTION:|color brightmagenta|
 
 s|^+TODO|color brightcyan "TODO:?"|
