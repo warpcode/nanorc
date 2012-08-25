@@ -9,6 +9,10 @@ s|^+BOOLEAN|color brightmagenta "\\<(true\|false)\\>"|
 s|^FUNCTION:|color brightblue|
 s|^+FUNCTION|color brightblue "\\w+\\s*\\("\ncolor black "\\("|
 
+s|^COMMENT:|color cyan|
+s|^+CCOMMENT|color cyan "(^\|\\s)//.*"\ncolor cyan start="/\\*" end="\\*/"|
+s|^+HASHCOMMENT|color cyan "(^\|\\s)#([^{].*)?$"|
+
 s|^PLAIN:|color black|
 s|^TYPE:|color brightgreen|
 s|^NUMBER:|color blue|
@@ -19,7 +23,6 @@ s|^KEYWORD:|color green|
 s|^~KEYWORD:|icolor green|
 s|^MACRO:|color brightyellow|
 s|^ESCAPE:|color magenta|
-s|^COMMENT:|color cyan|
 s|^WARNING:|color brightred|
 s|^SECTION:|color brightmagenta|
 

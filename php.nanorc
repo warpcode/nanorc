@@ -9,6 +9,5 @@ KEYWORD:  "\<(goto|continue|break|return|else|elseif|case|default|switch)\>"
 +BOOLEAN
 +STRING
 VARIABLE: "\$\w+"
-COMMENT:  "(^|\s)//.*"
-COMMENT:  start="/\*" end="\*/"
++CCOMMENT
 +LINT

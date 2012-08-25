@@ -7,6 +7,6 @@ BOOLEAN:  "\<(YES|yes|Y|y|ON|on|NO|no|N|n|OFF|off)\>"
 OPERATOR: ":\s" "\[" "\]" ":\s+[|>]" "^\s*- "
 VARIABLE: "\s[\*&][A-Za-z0-9]+"
 +STRING
-COMMENT:  "(^|\s)#.*$"
-FUNCTION: "^---" "^\.\.\." "^%YAML" "^%TAG"
++HASHCOMMENT
+SECTION:  "^---" "^\.\.\." "^%YAML" "^%TAG"
 +LINT

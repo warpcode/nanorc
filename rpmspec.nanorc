@@ -20,7 +20,7 @@ SECTION:  "^%(build$|changelog|check$|clean$|description)"
 SECTION:  "^%(files|install$|package|prep$)"
 SECTION:  "^%(pre|preun|pretrans|post|postun|posttrans)"
 SECTION:  "^%(trigger|triggerin|triggerpostun|triggerun|verifyscript)"
-COMMENT:  "#.*$"
++HASHCOMMENT
 NUMBER:   "^\*.*$"
 +LINT
 +TODO

@@ -14,7 +14,7 @@ PLAIN:    "[()$]"
 VARIABLE: "\$+\{[A-Za-z0-9_.-]+\}|\$+\([A-Za-z0-9_.-]+\)"
 VARIABLE: "\$[@^<*?%|+]|\$\([@^<*?%+-][DF]\)"
 ESCAPE:   "\$\$|\\.?"
-COMMENT:  "(\s|^|@)#.*$"
++HASHCOMMENT
 
 # Show trailing whitespace
 color ,green "\s+$"

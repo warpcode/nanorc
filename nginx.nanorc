@@ -7,5 +7,5 @@ VARIABLE: "\$(pid|realpath_root)"
 OPERATOR: "[;{}]"
 +STRING
 STRING:   start="'$" end="';$"
-COMMENT:  "(^|\s)#.*$"
++HASHCOMMENT
 +LINT

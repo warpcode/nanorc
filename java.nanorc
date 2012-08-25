@@ -12,6 +12,5 @@ NUMBER:   "\<([0-9._]+|0x[A-Fa-f0-9_]+|0b[0-1_]+)[FL]?\>"
 +STRING
 ESCAPE:   "\\([btnfr]|'|\"|\\)"
 ESCAPE:   "\\u[A-Fa-f0-9]{4}"
-COMMENT:  "(^|\s)//.*"
-COMMENT:  start="/\*" end="\*/"
++CCOMMENT
 +LINT

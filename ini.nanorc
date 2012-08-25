@@ -5,5 +5,5 @@ OPERATOR: "[=;]" "\[" "\]"
 VARIABLE: "^\s*[^=]*="
 SECTION:  "^\[.*\]$"
 +STRING
-COMMENT:  "#.*$"
++HASHCOMMENT
 +LINT

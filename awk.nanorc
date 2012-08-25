@@ -19,5 +19,5 @@ FUNCTION: "\<(bindtextdomain|dcgettext|dcngettext)\>"
 REGEXP:   "/.*[^\]/"
 +STRING
 ESCAPE:   "\\."
-COMMENT:  "(^|\s)#.*$"
++HASHCOMMENT
 +LINT

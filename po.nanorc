@@ -3,5 +3,5 @@ syntax "po" "\.pot?$"
 KEYWORD:  "\<(msgid|msgstr)\>"
 +STRING
 ESCAPE:   "\\.?"
-COMMENT:  "(^|\s)#.*$"
++HASHCOMMENT
 +LINT
