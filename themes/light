@@ -1,24 +1,26 @@
 #!/usr/bin/sed -f
 
-s|^TYPE:|color brightgreen|
 s|^STRING:|color yellow|
 s/^+STRING/color yellow ""(\\\\.|[^"])*"|'(\\\\.|[^'])*'"/
-s|^NUMBER:|color blue|
+
 s|^BOOLEAN:|color brightmagenta|
 s|^+BOOLEAN|color brightmagenta "\\<(true\|false)\\>"|
+
+s|^FUNCTION:|color brightblue|
+s|^+FUNCTION|color brightblue "\\w+\\s*\\("\ncolor black "\\("|
+
+s|^PLAIN:|color black|
+s|^TYPE:|color brightgreen|
+s|^NUMBER:|color blue|
 s|^REGEXP:|color magenta|
 s|^VARIABLE:|color brightyellow|
 s|^OPERATOR:|color red|
 s|^KEYWORD:|color green|
 s|^~KEYWORD:|icolor green|
-s|^FUNCTION:|color brightblue|
-s|^+FUNCTION|color brightblue "\\w+\\s*\\("\ncolor black "\\("|
-s|^PLAIN:|color black|
 s|^MACRO:|color brightyellow|
 s|^ESCAPE:|color magenta|
 s|^COMMENT:|color cyan|
 s|^WARNING:|color brightred|
-
 s|^SECTION:|color brightmagenta|
 
 s|^+TODO|color brightcyan "TODO:?"|
