@@ -23,6 +23,9 @@ deleted or changed according to preference. The default bindings try to stay
 close to common GUI conventions where possible (e.g. `Ctrl+S` for save,
 `Ctrl+O` for open).
 
+Use `nano demo/*` for some quick examples of highlighting different
+languages and `Alt+<` and `Alt+>` to switch between open buffers.
+
 Themes
 ------
 
