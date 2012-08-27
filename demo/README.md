@@ -1,20 +1,20 @@
 Examples
 ========
 
-This directory contains various example files for quickly viewing and testing
-[nano](http://www.nano-editor.org/) syntax definitions.
+This directory contains various example files for quickly viewing and
+testing [nanorc][1] syntax definitions.
 
-This `readme` also acts as the example for [Markdown] syntax.
+[1]: http://www.nano-editor.org/dist/v2.3/nanorc.5.html "nanorc man page"
 
-List
-----
+List Example
+------------
 
 - List item
-- *Bold list item*
+- **Bold list item**
 - [Linked list item](http://example.org "Example Link")
 
-Code
-----
+Code Example
+------------
 
     for i in A B C D; do
         echo $i
