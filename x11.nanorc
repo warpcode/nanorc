@@ -1,0 +1,9 @@
+syntax "xdefaults" "Xdefaults$"
+
+TYPE:     "^\w+\*"
+VARIABLE: "\*\w+\:"
+NUMBER:   "\<[0-9]+\>"
+OPERATOR: "[*:=]"
++BOOLEAN
++HASHCOMMENT
++LINT
