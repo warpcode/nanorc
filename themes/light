@@ -3,8 +3,8 @@
 s|^STRING:|color yellow|
 s/^+STRING/color yellow ""(\\\\.|[^"])*"|'(\\\\.|[^'])*'"/
 
-s|^BOOLEAN:|color brightmagenta|
-s|^+BOOLEAN|color brightmagenta "\\<(true\|false)\\>"|
+s|^BOOLEAN:|color brightcyan|
+s|^+BOOLEAN|color brightcyan "\\<(true\|false)\\>"|
 
 s|^FUNCTION:|color brightblue|
 s|^+FUNCTION|color brightblue "\\w+\\s*\\("\ncolor black "\\("|
@@ -26,6 +26,6 @@ s|^ESCAPE:|color magenta|
 s|^WARNING:|color brightwhite,red|
 s|^SECTION:|color brightmagenta|
 
-s|^+TODO|color brightcyan "TODO:?"|
+s|^+TODO|color brightwhite,cyan "TODO:?"|
 s|^+LINT|color ,green "\\s+$"\ncolor ,red "\t+"|
 s|^+LONG-LINE-WARNING|color ,red "^.{81,}$"|
