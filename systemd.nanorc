@@ -6,5 +6,6 @@ KEYWORD:  "^(After|Before|BusName|Conflicts|DefaultDependencies|ExecReload|ExecS
 OPERATOR: "="
 SECTION:  "^\[(Unit|Install|Service|Socket)\]"
 VARIABLE: "\$MAINPID"
++BOOLEAN
 +HASHCOMMENT
 +LINT
