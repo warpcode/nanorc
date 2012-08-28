@@ -7,3 +7,11 @@ OPERATOR: "[*:=]"
 +BOOLEAN
 +HASHCOMMENT
 +LINT
+
+syntax "xmodmap" "Xmodmap$"
+
+KEYWORD:  "\<keycode\>"
+NUMBER:   "\<[0-9]+\>"
+OPERATOR: "="
+COMMENT:  "^!.*$"
++LINT
