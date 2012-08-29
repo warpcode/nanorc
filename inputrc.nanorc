@@ -1,0 +1,8 @@
+syntax "inputrc" "inputrc$"
+
+color red   "\<(off|none)\>"
+color green "\<on\>"
+FUNCTION:   "\<set|\$include\>"
++STRING
++HASHCOMMENT
++LINT
