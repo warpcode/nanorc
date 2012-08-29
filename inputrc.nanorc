@@ -4,5 +4,6 @@ color red   "\<(off|none)\>"
 color green "\<on\>"
 FUNCTION:   "\<set|\$include\>"
 +STRING
+ESCAPE:     "\\.?"
 +HASHCOMMENT
 +LINT
