@@ -15,6 +15,7 @@ set regexp
 # File
 bind ^O insert main
 bind ^S writeout main
+bind ^C cancel all
 bind ^Q cancel all
 bind ^W cancel all
 bind ^Q exit main
@@ -26,6 +27,10 @@ bind ^X cut main
 bind ^V uncut main
 bind ^Z undo main
 bind ^Y redo main
+bind ^T verbatim main
+bind F5 refresh all
+bind F8 autoindent main
+bind F12 autoindent main
 
 # Search
 bind ^F whereis all
@@ -38,15 +43,6 @@ bind ^L gotoline main
 bind F3 searchagain main
 bind ^] findbracket main
 
-# Other
-bind ^C cancel all
-bind ^T verbatim main
-bind F5 refresh all
-bind F8 autoindent main
-bind F12 autoindent main
-
 # Default highlighting
 syntax "default"
-ESCAPE:  "\\.?"
-+HASHCOMMENT
 +LINT
