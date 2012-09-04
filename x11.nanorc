@@ -10,7 +10,7 @@ OPERATOR: "[*:=]"
 
 syntax "xmodmap" "Xmodmap$"
 
-KEYWORD:  "\<keycode\>"
+KEYWORD:  "\<(add|clear|keycode|keysym|remove)\>"
 NUMBER:   "\<[0-9]+\>"
 OPERATOR: "="
 COMMENT:  "^!.*$"
