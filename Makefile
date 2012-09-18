@@ -4,13 +4,13 @@ light:
 	@$(MAKE) -B ~/.nanorc
 
 dark:
-	@$(MAKE) FILTER="| sed 's|^color \+\(bright\)\?black|color \1white|'"
+	@$(MAKE) FILTER="-e 's|^color \+\(bright\)\?black|color \1white|'"
 
 ~/.nanorc: theme.sed *.nanorc
-	cat *.nanorc | sed -f theme.sed $(FILTER) $(STRIP) > $@
+	sed -f theme.sed $(FILTER) $(STRIP) *.nanorc > $@
 
 ifeq ($(shell uname),Darwin)
-  STRIP = | sed '/^header/d;/^bind/d;/^set undo/d'
+  STRIP = -e '/^header/d;/^bind/d;/^set undo/d'
 endif
 
 
