@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-themes/light $@ | sed -re 's|^color\s+(bright)?black|color \1white|'

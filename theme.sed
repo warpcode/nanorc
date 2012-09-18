@@ -1,5 +1,3 @@
-#!/usr/bin/sed -f
-
 s|^STRING:|color yellow|
 s/^+STRING/color yellow ""(\\\\.|[^"])*"|'(\\\\.|[^'])*'"/
 

@@ -13,24 +13,15 @@ syntax definitions to replace and expand the defaults.
 Installation
 ------------
 
-Use `make install` for a standard installation.
+Use `make` to concatenate everything together and install as a bundle to
+`~/.nanorc`. If your terminal has a dark background, install using
+`make dark` instead.
 
-All `*.nanorc` files will be concatenated together and installed as a bundle
-to `~/.nanorc`.
+Theme Script
+------------
 
-[main.nanorc] contains runtime options and key bindings. It can be safely
-deleted or changed according to preference. The default bindings try to stay
-close to common GUI conventions where possible (e.g. `Ctrl+S` for save,
-`Ctrl+O` for open).
-
-Use `nano demo/*` for some quick examples of highlighting different
-languages and `Alt+<` and `Alt+>` to switch between open buffers.
-
-Themes
-------
-
-All `*.nanorc` files are passed through a [theme] script before installation.
-This allows rules to be specified in terms of token names or "mixins",
+All `*.nanorc` files are passed through [theme.sed] before installation.
+This script allows rules to be specified in terms of token names or "mixins",
 instead of hard-coded colors.
 
 For example, the following named rule:
@@ -52,8 +43,19 @@ becomes:
 This system helps to keep colors uniform accross different languages and
 also to keep the definitions clear and maintainable.
 
-The default [theme] is for terminals with a light background color. To use a
-dark theme, install with `make install THEME=dark`.
+Key Bindings
+------------
+
+[main.nanorc] contains runtime options and key bindings. It can be safely
+deleted or changed according to preference. The default bindings try to stay
+close to common GUI conventions where possible (e.g. `Ctrl+S` for save,
+`Ctrl+O` for open).
+
+Testing
+-------
+
+There are a few files representing some of the supported languages in the
+`examples` directory. For a quick demonstration, use `nano examples/*`.
 
 Compatibility
 -------------
@@ -69,5 +71,5 @@ following features:
 
 [GNU nano]: http://www.nano-editor.org/
 [nanorc]: http://www.nano-editor.org/dist/v2.3/nanorc.5.html
-[theme]: https://github.com/craigbarnes/nanorc/tree/master/themes
+[theme.sed]: https://github.com/craigbarnes/nanorc/tree/master/theme.sed
 [main.nanorc]: https://github.com/craigbarnes/nanorc/blob/master/main.nanorc
