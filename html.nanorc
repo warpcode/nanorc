@@ -9,6 +9,11 @@ STRING:   "=([A-Za-z0-9!$%*\^(){}#|:;_~@+,.?/\\-]|\[|\])+"
 OPERATOR: "="
 PLAIN:    start=">" end="<"
 SECTION:  "[<>]"
+
+# Embedded template languages
+FUNCTION: "\{%.*%\}|<%.*%>"
+VARIABLE: "\{\{[^}]*\}\}|<%=.*%>"
+
 ESCAPE:   "&(#[0-9]+|[A-Za-z]+);"
 COMMENT:  start="<!--" end="-->"
 COMMENT:  "<!(doctype|DOCTYPE)[^>]*>"
