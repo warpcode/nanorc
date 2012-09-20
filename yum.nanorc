@@ -1,0 +1,6 @@
+syntax "yumrepo" "\.repo$|yum\.conf$|yum/.*\.conf$"
+
++INI
+VARIABLE: "\$(releasever|basearch)"
++HASHCOMMENT
++LINT

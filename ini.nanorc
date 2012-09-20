@@ -1,9 +1,8 @@
-syntax "ini" "\.(desktop|ini|override|repo)$" "gitconfig$"
+syntax "ini" "\.(ini|desktop|override)$"
 
-OPERATOR: "[=;]" "\[" "\]"
+OPERATOR: "[=;]|\[|\]"
 +BOOLEAN
-VARIABLE: "^\s*[^=]*="
-SECTION:  "^\[.*\]$"
++INI
 +STRING
 +HASHCOMMENT
 +LINT
