@@ -11,7 +11,7 @@ s|^COMMENT:|color cyan|
 s|^+CCOMMENT|color cyan "(^\|\\s)//.*"\ncolor cyan start="/\\*" end="\\*/"|
 s|^+HASHCOMMENT|color cyan "(^\|\\s)#([^{].*)?$"|
 
-s|^+INI|color brightyellow "^\\s*[^=]*="\ncolor brightmagenta "^\\[.*\\]$"|
+s|^+INI|color green "^\\s*[^=]*="\ncolor brightmagenta "^\\[.*\\]$"|
 
 s|^PLAIN:|color black|
 s|^TYPE:|color brightgreen|
