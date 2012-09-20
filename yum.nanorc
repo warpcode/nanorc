@@ -1,4 +1,4 @@
-syntax "yumrepo" "\.repo$|yum\.conf$|yum/.*\.conf$"
+syntax "yum" "\.repo$|yum.*\.conf$"
 
 +INI
 VARIABLE: "\$(releasever|basearch)"
