@@ -1,5 +1,5 @@
 syntax "awk" "\.awk$"
-header "^#!.*bin/(env\s*)?awk"
+header "^#!.*bin/(env\s+)?awk(\s|$)"
 
 VARIABLE: "\$[A-Za-z0-9_!@#$*?-]+"
 VARIABLE: "\<(ARGC|ARGIND|ARGV|BINMODE|CONVFMT|ENVIRON|ERRNO|FIELDWIDTHS)\>"
