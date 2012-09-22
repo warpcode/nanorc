@@ -3,8 +3,12 @@ syntax "KickStart" "\.ks$" "\.kickstart$"
 SECTION:  "%[a-z]+"
 KEYWORD:  "^\s*(install|cdrom|text|graphical|volgroup|logvol|reboot|timezone|lang|keyboard|authconfig|firstboot|rootpw|user|firewall|selinux|repo|part|partition|clearpart|bootloader)"
 KEYWORD:  "--(name|mirrorlist|baseurl|utc)(=|\>)"
-FUNCTION: "^@[A-Za-z][A-Za-z-]*"
 VARIABLE: "\$(releasever|basearch)\>"
-WARNING:  "^-@?[a-zA-Z0-9-]+"
+
+# Packages and groups
+color brightblack "^@[A-Za-z][A-Za-z-]*"
+color brightred   "^-@[a-zA-Z0-9*-]+"
+color red         "^-[a-zA-Z0-9*-]+"
+
 +HASHCOMMENT
 +LINT
