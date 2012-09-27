@@ -13,12 +13,13 @@ syntax definitions to replace and expand the defaults.
 Installation
 ------------
 
-Use `make` to concatenate everything together and install as a bundle to
-`~/.nanorc`. If your terminal has a dark background, install using
-`make dark` instead.
+The included Makefile will concatenate everything together and install as a
+bundle to `~/.nanorc`. Use either `make light` or `make dark`, dedending on
+the background color of your terminal. Using only `make` will default to
+`make light`.
 
-Theme Script
-------------
+Theming System
+--------------
 
 All `*.nanorc` files are passed through [theme.sed] before installation.
 This script allows rules to be specified in terms of token names or "mixins",
@@ -41,7 +42,8 @@ becomes:
     color brightcyan "\<(true|false)\>"
 
 This system helps to keep colors uniform accross different languages and
-also to keep the definitions clear and maintainable.
+also to keep the definitions clear and maintainable, which is something that
+becomes quite awkward using only plain [nanorc] files.
 
 Key Bindings
 ------------
