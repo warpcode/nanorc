@@ -11,6 +11,7 @@ set smooth
 set const
 set nohelp
 set regexp
+set suspend
 
 # File
 bind ^O insert main
@@ -25,7 +26,7 @@ bind ^W exit main
 bind ^A mark main
 bind ^X cut main
 bind ^V uncut main
-bind ^Z undo main
+bind ^U undo main
 bind ^Y redo main
 bind ^T verbatim main
 bind F5 refresh all
