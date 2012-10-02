@@ -13,10 +13,9 @@ syntax definitions to replace and expand the defaults.
 Installation
 ------------
 
-The included Makefile will concatenate everything together and install as a
-bundle to `~/.nanorc`. Use either `make light` or `make dark`, dedending on
-the background color of your terminal. Using only `make` will default to
-`make light`.
+Simply use `make` to concatenate everything together and install as a bundle
+to `~/.nanorc`. If you're terminal text color isn't black, you'll need to
+specify it when installing, e.g. `make TEXT=white` or `make TEXT=green` etc.
 
 Theming System
 --------------
@@ -79,8 +78,7 @@ In order to reliably highlight keywords, this projects makes heavy use of
 the GNU regex word boundary extensions (`\<` and `\>`). BSD implementations
 also have these extensions but use a completely different syntax (`[[:<:]]`
 and `[[:>:]]`). If you're using Mac OS X or a BSD and highlighting seems
-messed up, add `BSDREGEX=1` to the command line when installing, for example
-`make dark BSDREGEX=1`.
+messed up, try to install using `make BSDREGEX=1`.
 
 [GNU nano]: http://www.nano-editor.org/
 [nanorc]: http://www.nano-editor.org/dist/v2.3/nanorc.5.html
