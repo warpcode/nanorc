@@ -1,0 +1,2 @@
+color brightblue "\w+\s*\("
+color black "\("

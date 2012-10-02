@@ -1,25 +1,34 @@
-s|^STRING:|color yellow|
-s/^+STRING/color yellow ""(\\\\.|[^"])*"|'(\\\\.|[^'])*'"/
-
-s|^BOOLEAN:|color brightcyan|
-s|^+BOOLEAN|color brightcyan "\\<(true\|false)\\>"|
-
-s|^FUNCTION:|color brightblue|
-s|^+FUNCTION|color brightblue "\\w+\\s*\\("\ncolor black "\\("|
-
-s|^COMMENT:|color cyan|
-
+/^+STRING/ {
+    r mixins/string.nanorc
+    d
+}
+/^+BOOLEAN/ {
+    r mixins/boolean.nanorc
+    d
+}
+/^+FUNCTION/ {
+    r mixins/function.nanorc
+    d
+}
 /^+CCOMMENT/ {
     r mixins/ccomment.nanorc
     d
 }
-
-s|^+HASHCOMMENT|color cyan "(^\|\\s)#([^{].*)?$"|
-
-s|^+INI|color green "^\\s*[^=]*="\ncolor brightmagenta "^\\[.*\\]$"|
+/^+HASHCOMMENT/ {
+    r mixins/hashcomment.nanorc
+    d
+}
+/^+INI/ {
+    r mixins/ini.nanorc
+    d
+}
 
 s|^PLAIN:|color black|
+s|^FUNCTION:|color brightblue|
+s|^STRING:|color yellow|
+s|^COMMENT:|color cyan|
 s|^TYPE:|color brightgreen|
+s|^BOOLEAN:|color brightcyan|
 s|^NUMBER:|color blue|
 s|^REGEXP:|color magenta|
 s|^VARIABLE:|color brightyellow|
