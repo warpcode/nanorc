@@ -23,6 +23,21 @@
     d
 }
 
+/^+TODO/ {
+    r mixins/todo.nanorc
+    d
+}
+
+/^+LINT/ {
+    r mixins/lint.nanorc
+    d
+}
+
+/^+LONGLINE/ {
+    r mixins/longline.nanorc
+    d
+}
+
 s|^PLAIN:|color black|
 s|^FUNCTION:|color brightblue|
 s|^STRING:|color yellow|
@@ -39,7 +54,3 @@ s|^MACRO:|color brightyellow|
 s|^ESCAPE:|color magenta|
 s|^WARNING:|color brightwhite,red|
 s|^SECTION:|color brightmagenta|
-
-s|^+TODO|color brightwhite,cyan "TODO:?"|
-s|^+LINT|color ,green "\\s+$"\ncolor ,red "\t+"|
-s|^+LONG-LINE-WARNING|color ,red "^.{81,}$"|
