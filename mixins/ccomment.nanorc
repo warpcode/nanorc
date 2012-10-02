@@ -1,2 +1,2 @@
-color cyan "(^|\s)//.*"
+color cyan "(^|[[:space:]])//.*"
 color cyan start="/\*" end="\*/"

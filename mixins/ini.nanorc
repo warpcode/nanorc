@@ -1,2 +1,2 @@
-color green "^\s*[^=]*="
+color green "^[[:space:]]*[^=]*="
 color brightmagenta "^\[.*\]$"
