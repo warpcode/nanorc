@@ -1,8 +1,5 @@
-light: theme.sed *.nanorc mixins/*.nanorc
-	cat *.nanorc | sed -f theme.sed $(FILTER) > ~/.nanorc
-
-dark:
-	@$(MAKE) --no-print-directory DARK=1
+~/.nanorc: theme.sed *.nanorc mixins/*.nanorc
+	cat *.nanorc | sed -f theme.sed $(FILTER) > $@
 
 ifeq ($(shell uname),Darwin)
   OLDNANO = 1
@@ -12,8 +9,8 @@ ifdef OLDNANO
   FILTER += | sed -e '/^header/d;/^bind/d;/^set undo/d'
 endif
 
-ifdef DARK
-  FILTER += | sed -e 's|^color \+\(bright\)\?black|color \1white|'
+ifdef TEXT
+  FILTER += | sed -e 's|^color \+\(bright\)\?black|color \1$(TEXT)|'
 endif
 
 ifdef BSDREGEX
@@ -21,4 +18,4 @@ ifdef BSDREGEX
 endif
 
 
-.PHONY: light dark
+.PHONY: ~/.nanorc
