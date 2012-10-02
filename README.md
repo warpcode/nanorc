@@ -62,14 +62,25 @@ There are a few files representing some of the supported languages in the
 Compatibility
 -------------
 
-The current builds of Nano included with OSX are quite old and lack support
+### Features
+
+The current builds of Nano included with OS X are quite old and lack support
 for various [nanorc] features used by this project. To work around this issue,
-when installing on OSX, the build process will automatically strip out the
+when installing on OS X, the build process will automatically strip out the
 following features:
 
 * All `header` commands
 * All `bind` commands
 * The `set undo` option
+
+### Regular Expressions
+
+In order to reliably highlight keywords, this projects makes heavy use of
+the GNU regex word boundary extensions (`\<` and `\>`). BSD implementations
+also have these extensions but use a completely different syntax (`[[:<:]]`
+and `[[:>:]]`). If you're using Mac OS X or a BSD and highlighting seems
+messed up, add `BSDREGEX=1` to the command line when installing, for example
+`make dark BSDREGEX=1`.
 
 [GNU nano]: http://www.nano-editor.org/
 [nanorc]: http://www.nano-editor.org/dist/v2.3/nanorc.5.html
