@@ -4,7 +4,7 @@ light:
 	@$(MAKE) -B ~/.nanorc
 
 dark:
-	@$(MAKE) FILTER="-e 's|^color \+\(bright\)\?black|color \1white|'"
+	@$(MAKE) FILTER="| sed -e 's|^color \+\(bright\)\?black|color \1white|'"
 
 ~/.nanorc: theme.sed *.nanorc
 	cat *.nanorc | sed -f theme.sed $(FILTER) $(STRIP) > $@
