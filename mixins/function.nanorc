@@ -1,2 +1,2 @@
-color brightblue "\w+\s*\("
-color black "\("
+color brightblue "[A-Za-z_][A-Za-z0-9_]*[[:space:]]*[(]"
+color black "[(]"
