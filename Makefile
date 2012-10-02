@@ -7,11 +7,14 @@ dark:
 	@$(MAKE) FILTER="-e 's|^color \+\(bright\)\?black|color \1white|'"
 
 ~/.nanorc: theme.sed *.nanorc
-	sed -f theme.sed $(FILTER) $(STRIP) *.nanorc > $@
+	cat *.nanorc | sed -f theme.sed $(FILTER) $(STRIP) > $@
 
 ifeq ($(shell uname),Darwin)
-  STRIP = -e '/^header/d;/^bind/d;/^set undo/d'
+  STRIP += | sed -e '/^header/d;/^bind/d;/^set undo/d'
 endif
 
+ifdef BSDREGEX
+  STRIP += | sed -e 's|\\<|[[:<:]]|g;s|\\>|[[:>:]]|g'
+endif
 
 .PHONY: light dark
