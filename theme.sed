@@ -8,7 +8,12 @@ s|^FUNCTION:|color brightblue|
 s|^+FUNCTION|color brightblue "\\w+\\s*\\("\ncolor black "\\("|
 
 s|^COMMENT:|color cyan|
-s|^+CCOMMENT|color cyan "(^\|\\s)//.*"\ncolor cyan start="/\\*" end="\\*/"|
+
+/^+CCOMMENT/ {
+    r mixins/ccomment.nanorc
+    d
+}
+
 s|^+HASHCOMMENT|color cyan "(^\|\\s)#([^{].*)?$"|
 
 s|^+INI|color green "^\\s*[^=]*="\ncolor brightmagenta "^\\[.*\\]$"|
