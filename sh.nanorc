@@ -1,7 +1,7 @@
 syntax "sh" "\.sh$" "\.bash$" "bashrc$" "bash_profile$"
-header "^#!.*/(env\s+)?(ba|k|pdk)?sh[-0-9_]*(\s|$)"
+header "^#!.*/(env +)?(ba|k|pdk)?sh[-0-9_]*( |$)"
 
-FUNCTION: "^[A-Za-z0-9_+-]+\s*\(\)"
+FUNCTION: "^[A-Za-z0-9_+-]+[[:space:]]*\(\)"
 KEYWORD:  "\<(case|do|done|elif|else|esac|fi|for|function|if)\>"
 KEYWORD:  "\<(in|select|then|time|until|while)\>"
 FUNCTION: "\<(echo|exit|export|let|local|read|return|set|shift|umask|unset)\>"

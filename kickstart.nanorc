@@ -1,7 +1,7 @@
 syntax "KickStart" "\.ks$" "\.kickstart$"
 
 SECTION:  "%[a-z]+"
-KEYWORD:  "^\s*(install|cdrom|text|graphical|volgroup|logvol|reboot|timezone|lang|keyboard|authconfig|firstboot|rootpw|user|firewall|selinux|repo|part|partition|clearpart|bootloader)"
+KEYWORD:  "^[[:space:]]*(install|cdrom|text|graphical|volgroup|logvol|reboot|timezone|lang|keyboard|authconfig|firstboot|rootpw|user|firewall|selinux|repo|part|partition|clearpart|bootloader)"
 KEYWORD:  "--(name|mirrorlist|baseurl|utc)(=|\>)"
 VARIABLE: "\$(releasever|basearch)\>"
 

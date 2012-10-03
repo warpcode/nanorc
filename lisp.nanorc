@@ -9,5 +9,5 @@ BOOLEAN:  "\<[tT]\>"
 STRING:   "\"(\\.|[^"])*\""
 ESCAPE:   "'[A-Za-z][A-Za-z0-9_-]+"
 ESCAPE:   "\\.?"
-COMMENT:  "(^|\s);.*"
+COMMENT:  "(^|[[:space:]]);.*"
 +LINT

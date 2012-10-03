@@ -1,14 +1,14 @@
 syntax "makefile" "([Mm]akefile|\.ma?k)$"
-header "^#!.*/(env\s+)?[bg]?make(\s|$)"
+header "^#!.*/(env +)?[bg]?make( |$)"
 
 KEYWORD:  "\<(ifeq|ifdef|ifneq|ifndef|else|endif)\>|^override\>"
 SECTION:  "^[^   ]+:"
 OPERATOR: "[=,%]" "\+=|\?=|:=|&&|\|\|"
-FUNCTION: "\$\((abspath|addprefix|addsuffix|and|basename|call|dir|error)\s"
-FUNCTION: "\$\((eval|filter|filter-out|findstring|firstword|flavor)\s"
-FUNCTION: "\$\((foreach|if|info|join|lastword|notdir|or|origin|patsubst)\s"
-FUNCTION: "\$\((realpath|shell|sort|strip|suffix|value|warning)\s"
-FUNCTION: "\$\((wildcard|word|wordlist|words)\s"
+FUNCTION: "\$\((abspath|addprefix|addsuffix|and|basename|call|dir)[[:space:]]"
+FUNCTION: "\$\((error|eval|filter|filter-out|findstring|firstword)[[:space:]]"
+FUNCTION: "\$\((flavor|foreach|if|info|join|lastword|notdir|or)[[:space:]]"
+FUNCTION: "\$\((origin|patsubst|realpath|shell|sort|strip|suffix)[[:space:]]"
+FUNCTION: "\$\((value|warning|wildcard|word|wordlist|words)[[:space:]]"
 PLAIN:    "[()$]"
 +STRING
 VARIABLE: "\$+(\{[^} ]+\}|\([^) ]+\))"
@@ -17,4 +17,4 @@ ESCAPE:   "\$\$|\\.?"
 +HASHCOMMENT
 
 # Show trailing whitespace
-color ,green "\s+$"
+color ,green "[[:space:]]+$"

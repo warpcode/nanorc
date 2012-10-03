@@ -1,7 +1,7 @@
 syntax "ruby" "\.rb$"
 
 KEYWORD: "\<(BEGIN|END|alias|and|begin|break|case|class|def|defined\?|do|else|elsif|end|ensure|false|for|if|in|module|next|nil|not|or|redo|rescue|retry|return|self|super|then|true|undef|unless|until|when|while|yield)\>"
-STRING:  "(^|\s):[A-Za-z0-9_]+\>"
+STRING:  "(^|[[:space:]]):[A-Za-z0-9_]+\>"
 REGEXP:  "/([^/]|(\\/))*/[iomx]*" "%r\{([^}]|(\\}))*\}[iomx]*"
 +STRING
 +HASHCOMMENT
