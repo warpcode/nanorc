@@ -1,7 +1,7 @@
 syntax "xdefaults" "Xdefaults$"
 
-TYPE:     "^\w+\*"
-VARIABLE: "\*\w+\:"
+TYPE:     "^[[:alnum:]]+\*"
+VARIABLE: "\*[[:alnum:]]+\:"
 NUMBER:   "\<[0-9]+\>"
 OPERATOR: "[*:=]"
 +BOOLEAN

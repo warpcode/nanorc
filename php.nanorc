@@ -8,6 +8,6 @@ KEYWORD:  "\<(class|new|private|public|function|for|foreach|if|while|do|var)\>"
 KEYWORD:  "\<(goto|continue|break|return|else|elseif|case|default|switch)\>"
 +BOOLEAN
 +STRING
-VARIABLE: "\$\w+"
+VARIABLE: "\$[A-Za-z_][A-Za-z0-9_]*"
 +CCOMMENT
 +LINT
