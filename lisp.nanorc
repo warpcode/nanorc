@@ -1,7 +1,7 @@
 syntax "lisp" "emacs$" "\.(el|li?sp|scm|ss)$"
 
 FUNCTION: "\([a-z-]+"
-OPERATOR: "\([-+*/<>]|'"
+OPERATOR: "\(([-+*/<>]|<=|>=)|'"
 PLAIN:    "\("
 NUMBER:   "\<[0-9]+\>"
 ~KEYWORD: "\<nil\>"
