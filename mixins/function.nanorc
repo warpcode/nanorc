@@ -1,2 +1,2 @@
-color brightblue "[A-Za-z_][A-Za-z0-9_]*[[:space:]]*[(]"
-color black "[(]"
+FUNCTION: "[A-Za-z_][A-Za-z0-9_]*[[:space:]]*[(]"
+PLAIN:    "[(]"

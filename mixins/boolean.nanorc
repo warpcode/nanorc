@@ -1,1 +1,1 @@
-color brightcyan "\<(true|false)\>"
+BOOLEAN: "\<(true|false)\>"

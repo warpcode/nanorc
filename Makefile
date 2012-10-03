@@ -1,5 +1,5 @@
 ~/.nanorc: theme.sed *.nanorc mixins/*.nanorc
-	cat *.nanorc | sed -f theme.sed $(FILTER) > $@
+	cat *.nanorc | sed -f mixins.sed | sed -f theme.sed $(FILTER) > $@
 
 ifeq ($(shell uname),Darwin)
   OLDNANO = 1
