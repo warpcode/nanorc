@@ -10,7 +10,7 @@ ifdef OLDNANO
 endif
 
 ifdef TEXT
-  FILTER += | sed -e 's|^color \+\(bright\)\?black|color \1$(TEXT)|'
+  FILTER += | sed -e 's|^color \(bright\)\{0,1\}black|color \1$(TEXT)|'
 endif
 
 ifdef BSDREGEX
