@@ -14,8 +14,13 @@ Installation
 ------------
 
 Simply use `make` to concatenate everything together and install as a bundle
-to `~/.nanorc`. If your terminal text color isn't black, you'll need to
-specify it when installing, e.g. `make TEXT=white` or `make TEXT=green` etc.
+to `~/.nanorc`.
+
+If your terminal text color isn't black, you'll need to specify it when
+installing, using `make TEXT=white`, where `white` is one of the following
+valid color names:
+
+    red, green, yellow, blue, magenta, cyan, white
 
 After installation, use `nano examples/*` to test if everything is
 working properly. If some or all of the files fail to highlight properly,
@@ -77,13 +82,15 @@ following features:
 * All `bind` commands
 * The `set undo` option
 
-### Regular expression workaround for some versions of OS X and *BSD
+### Regular expression workaround on OS X and *BSD
 
 In order to reliably highlight keywords, this projects makes heavy use of
 the GNU regex word boundary extensions (`\<` and `\>`). BSD implementations
-also have these extensions but use a completely different syntax (`[[:<:]]`
-and `[[:>:]]`). If you're using Mac OS X or a BSD and highlighting seems
-messed up, try to install using `make BSDREGEX=1`.
+also have these extensions but use a different, incompatible syntax
+(`[[:<:]]` and `[[:>:]]`). Since version 2.1.5, nano automatically translates
+the GNU syntax to BSD syntax at run-time, but if you're running a pre-2.1.5
+version of nano on Mac OS X or *BSD, you can translate the `~/.nanorc` file
+itself with `make BSDREGEX=1`.
 
 [GNU nano]: http://www.nano-editor.org/
 [nanorc]: http://www.nano-editor.org/dist/v2.3/nanorc.5.html
