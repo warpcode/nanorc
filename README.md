@@ -17,6 +17,10 @@ Simply use `make` to concatenate everything together and install as a bundle
 to `~/.nanorc`. If you're terminal text color isn't black, you'll need to
 specify it when installing, e.g. `make TEXT=white` or `make TEXT=green` etc.
 
+After installation, use `nano examples/*` to test if everything is
+working properly. If some or all of the files fail to highlight properly,
+see the "Compatibility" section below.
+
 Theming System
 --------------
 
@@ -52,16 +56,17 @@ deleted or changed according to preference. The default bindings try to stay
 close to common GUI conventions where possible (e.g. `Ctrl+S` for save,
 `Ctrl+O` for open).
 
-Testing
--------
-
-There are a few files representing some of the supported languages in the
-`examples` directory. For a quick demonstration, use `nano examples/*`.
-
 Compatibility
 -------------
 
-### Features
+### Interaction with `/etc/nanorc` on Debian/Ubuntu/Arch/...
+
+If syntax highlighting fails, try removing any `include` or `syntax` lines
+from `/etc/nanorc`. There appears to be a bug in older versions of nano that
+causes highlighting to fail when `/etc/nanorc` and `~/.nanorc` both exist
+and contain active `syntax` rules.
+
+### Disabled features on OS X
 
 The current builds of Nano included with OS X are quite old and lack support
 for various [nanorc] features used by this project. To work around this issue,
@@ -72,7 +77,7 @@ following features:
 * All `bind` commands
 * The `set undo` option
 
-### Regular Expressions
+### Regular expression workaround for some versions of OS X and *BSD
 
 In order to reliably highlight keywords, this projects makes heavy use of
 the GNU regex word boundary extensions (`\<` and `\>`). BSD implementations
