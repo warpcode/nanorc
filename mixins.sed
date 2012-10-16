@@ -22,17 +22,14 @@
     r mixins/ini.nanorc
     d
 }
-
 /^+TODO/ {
     r mixins/todo.nanorc
     d
 }
-
 /^+LINT/ {
     r mixins/lint.nanorc
     d
 }
-
 /^+LONGLINE/ {
     r mixins/longline.nanorc
     d

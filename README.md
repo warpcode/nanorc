@@ -24,9 +24,9 @@ see the "Compatibility" section below.
 Theming System
 --------------
 
-All `*.nanorc` files are passed through [theme.sed] before installation.
-This script allows rules to be specified in terms of token names or "mixins",
-instead of hard-coded colors.
+All `*.nanorc` files are passed through [mixins.sed] and [theme.sed] before
+installation. These scripts allow rules to be specified in terms of token
+names or [mixins], instead of hard-coded colors.
 
 For example, the following named rule:
 
@@ -44,7 +44,7 @@ becomes:
 
     color brightcyan "\<(true|false)\>"
 
-This system helps to keep colors uniform accross different languages and
+This system helps to keep colors uniform across different languages and
 also to keep the definitions clear and maintainable, which is something that
 becomes quite awkward using only plain [nanorc] files.
 
@@ -88,4 +88,6 @@ messed up, try to install using `make BSDREGEX=1`.
 [GNU nano]: http://www.nano-editor.org/
 [nanorc]: http://www.nano-editor.org/dist/v2.3/nanorc.5.html
 [theme.sed]: https://github.com/craigbarnes/nanorc/tree/master/theme.sed
+[mixins.sed]: https://github.com/craigbarnes/nanorc/tree/master/mixins.sed
+[mixins]: https://github.com/craigbarnes/nanorc/tree/master/mixins
 [main.nanorc]: https://github.com/craigbarnes/nanorc/blob/master/main.nanorc
