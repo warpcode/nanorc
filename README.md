@@ -26,6 +26,25 @@ After installation, use `nano examples/*` to test if everything is
 working properly. If some or all of the files fail to highlight properly,
 see the "Compatibility" section below.
 
+Customization
+-------------
+
+### Key Bindings
+
+[main.nanorc] contains settings and key bindings. It can be safely deleted
+or changed according to preference. The default bindings try to stay close
+to common GUI conventions where possible (e.g. `Ctrl+S` for save, `Ctrl+O`
+for open).
+
+Note: key bindings are automatically disabled on OS X (see the
+"Compatibility" section below).
+
+### Warnings
+
+By default, tab characters will be highlighted with a red background except
+when editing Makefiles. To turn this off, remove the second line from
+`mixins/lint.nanorc`.
+
 Theming System
 --------------
 
@@ -52,14 +71,6 @@ becomes:
 This system helps to keep colors uniform across different languages and
 also to keep the definitions clear and maintainable, which is something that
 becomes quite awkward using only plain [nanorc] files.
-
-Key Bindings
-------------
-
-[main.nanorc] contains runtime options and key bindings. It can be safely
-deleted or changed according to preference. The default bindings try to stay
-close to common GUI conventions where possible (e.g. `Ctrl+S` for save,
-`Ctrl+O` for open).
 
 Compatibility
 -------------
