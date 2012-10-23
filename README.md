@@ -13,8 +13,7 @@ syntax definitions to replace and expand the defaults.
 Installation
 ------------
 
-Simply use `make` to concatenate everything together and install as a bundle
-to `~/.nanorc`.
+Use `make` to install to `~/.nanorc`.
 
 If your terminal text color isn't black, you'll need to specify it when
 installing, using `make TEXT=white`, where `white` is one of the following
@@ -23,7 +22,7 @@ valid color names:
     red, green, yellow, blue, magenta, cyan, white
 
 After installation, use `nano examples/*` to test if everything is
-working properly. If some or all of the files fail to highlight properly,
+working properly. If some or all of the files aren't highlighted properly,
 see the "Compatibility" section below.
 
 Customization
@@ -43,7 +42,7 @@ Note: key bindings are automatically disabled on OS X (see the
 
 By default, tab characters will be highlighted with a red background except
 when editing Makefiles. To turn this off, remove the second line from
-`mixins/lint.nanorc`.
+`mixins/lint.nanorc` and run `make` again.
 
 Theming System
 --------------
