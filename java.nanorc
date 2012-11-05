@@ -1,6 +1,11 @@
 syntax "java" "\.java$"
 
+# Class
 SECTION:  "class +[A-Za-z0-9]+ *((implements|extends) +[A-Za-z0-9.]+)?"
+
+# Annotation
+ESCAPE:   "@[A-Za-z]+"
+
 +FUNCTION
 TYPE:     "\<(boolean|byte|char|double|float|int|long|short|String|void)\>"
 KEYWORD:  "\<(break|case|catch|continue|default|do|else|finally|for|if)\>"
