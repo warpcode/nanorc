@@ -1,5 +1,6 @@
 syntax "java" "\.java$"
 
++FUNCTION
 TYPE:     "\<(boolean|byte|char|double|float|int|long|short|String|void)\>"
 KEYWORD:  "\<(break|case|catch|continue|default|do|else|finally|for|if)\>"
 KEYWORD:  "\<(new|return|switch|this|throw|transient|try|while)\>"
