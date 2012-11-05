@@ -1,5 +1,6 @@
 syntax "java" "\.java$"
 
+SECTION:  "class +[A-Za-z0-9]+ *((implements|extends) +[A-Za-z0-9.]+)?"
 +FUNCTION
 TYPE:     "\<(boolean|byte|char|double|float|int|long|short|String|void)\>"
 KEYWORD:  "\<(break|case|catch|continue|default|do|else|finally|for|if)\>"
