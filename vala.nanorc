@@ -4,8 +4,9 @@ TYPE:     "\<(float|double|bool|char|int|uint|short|long|void|(un)?signed)\>"
 +FUNCTION
 KEYWORD:  "\<(for|if|while|do|else|case|default|switch|try|throw|catch)\>"
 KEYWORD:  "\<(inline|typedef|struct|enum|union|extern|static|const)\>"
-KEYWORD:  "\<(operator|new|delete|goto|continue|break|return|null)\>"
+KEYWORD:  "\<(operator|new|delete|continue|break|return|null)\>"
 KEYWORD:  "\<(class|override|private|public|signal|this|weak)\>"
++GOTO
 +BOOLEAN
 NUMBER:   "\<([0-9]+)\>"
 OPERATOR: "[-+/*=<>?:!~%&|]" "->"

@@ -6,8 +6,9 @@ TYPE:     "\<(float|double|bool|char|int|short|long|void|(un)?signed)\>"
 TYPE:     "\<[a-z0-9_]+_t\>"
 KEYWORD:  "\<(struct|enum|static|const|union|typedef|extern)\>"
 KEYWORD:  "\<(for|if|while|do|else|case|default|switch|continue|break)\>"
-KEYWORD:  "\<(goto|return|inline|sizeof|auto|register|volatile|restrict)\>"
+KEYWORD:  "\<(return|inline|sizeof|auto|register|volatile|restrict)\>"
 KEYWORD:  "\<(try|throw|catch|operator|new|delete)\>"
++GOTO
 +BOOLEAN
 OPERATOR: "[-+/*=<>?:!~%&|^]"
 NUMBER:   "\<([0-9]+|0x[0-9a-fA-F]*)\>|'.'"

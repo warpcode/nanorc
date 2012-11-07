@@ -26,6 +26,10 @@
     r mixins/todo.nanorc
     d
 }
+/^+GOTO/ {
+    r mixins/goto.nanorc
+    d
+}
 /^+LINT/ {
     r mixins/lint.nanorc
     d

@@ -5,7 +5,8 @@ SECTION:  "(<\?(php)?|\?>)"
 +FUNCTION
 TYPE:     "\<(float|global|double|bool|char|int|enum|const)\>"
 KEYWORD:  "\<(class|new|private|public|function|for|foreach|if|while|do|var)\>"
-KEYWORD:  "\<(goto|continue|break|return|else|elseif|case|default|switch)\>"
+KEYWORD:  "\<(continue|break|return|else|elseif|case|default|switch)\>"
++GOTO
 +BOOLEAN
 +STRING
 VARIABLE: "\$[A-Za-z_][A-Za-z0-9_]*"

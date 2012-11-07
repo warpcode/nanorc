@@ -17,8 +17,12 @@ int main(void)
 
     // Keywords
     if (1 > 2) {
-        return 100 * 34 / 6 - 1;
+        return 0;
+    } else if (2 == 2) {
+        goto finish;
     } else {
-        return 10 % 3;
+        return 2;
     }
+finish:
+    return 1;
 }
