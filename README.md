@@ -97,10 +97,10 @@ following features:
 In order to reliably highlight keywords, this projects makes heavy use of
 the GNU regex word boundary extensions (`\<` and `\>`). BSD implementations
 also have these extensions but use a different, incompatible syntax
-(`[[:<:]]` and `[[:>:]]`). Since version 2.1.5, nano automatically translates
-the GNU syntax to BSD syntax at run-time, but if you're running a pre-2.1.5
-version of nano on Mac OS X or *BSD, you can translate the `~/.nanorc` file
-itself by installing with `make BSDREGEX=1`.
+(`[[:<:]]` and `[[:>:]]`). Since version 2.1.5, nano can automatically
+translate the GNU syntax to BSD syntax at run-time, but for the benefit of
+people running a pre-2.1.5 version of nano on OS X or *BSD, the `~/.nanorc`
+file itself can be translated by installing with `make BSDREGEX=1`.
 
 [GNU nano]: http://www.nano-editor.org/
 [nanorc]: http://www.nano-editor.org/dist/v2.3/nanorc.5.html
