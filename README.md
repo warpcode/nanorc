@@ -77,9 +77,9 @@ Compatibility
 ### Interaction with `/etc/nanorc` on Debian/Ubuntu/Arch/...
 
 If syntax highlighting fails, try removing any `include` or `syntax` lines
-from `/etc/nanorc`. There appears to be a bug in older versions of nano that
-causes highlighting to fail when `/etc/nanorc` and `~/.nanorc` both exist
-and contain active `syntax` rules.
+from `/etc/nanorc`. There appears to be [a bug in older versions of nano][5]
+that causes highlighting to fail when `/etc/nanorc` and `~/.nanorc` both
+exist and contain active `syntax` rules.
 
 ### Disabled features on OS X
 
@@ -108,3 +108,4 @@ file itself can be translated by installing with `make BSDREGEX=1`.
 [mixins.sed]: https://github.com/craigbarnes/nanorc/tree/master/mixins.sed
 [mixins]: https://github.com/craigbarnes/nanorc/tree/master/mixins
 [main.nanorc]: https://github.com/craigbarnes/nanorc/blob/master/main.nanorc
+[5]: https://github.com/craigbarnes/nanorc/issues/5 "between 2.2.6 and 2.3.2"
