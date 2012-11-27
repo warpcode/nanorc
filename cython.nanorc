@@ -1,9 +1,6 @@
 syntax "cython" "\.pyx$" "\.pxd$" "\.pyi$"
 
 +FUNCTION
-FUNCTION: "def [ 0-9A-Z_]+"
-FUNCTION: "cpdef [ 0-9A-Z_]+\(.*\):"
-FUNCTION: "cdef cppclass [ 0-9A-Z_]+\(.*\):"
 KEYWORD:  "\<(and|as|assert|break|class|continue|def|del|elif|else|except)\>"
 KEYWORD:  "\<(exec|finally|for|from|global|if|import|in|is|lambda|not|or)\>"
 KEYWORD:  "\<(pass|print|raise|return|try|while|with|yield|None)\>"
