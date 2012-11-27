@@ -1,26 +1,26 @@
 syntax "cython" "\.pyx$" "\.pxd$" "\.pyi$"
 
++FUNCTION
+FUNCTION: "def [ 0-9A-Z_]+"
+FUNCTION: "cpdef [ 0-9A-Z_]+\(.*\):"
+FUNCTION: "cdef cppclass [ 0-9A-Z_]+\(.*\):"
 KEYWORD:  "\<(and|as|assert|break|class|continue|def|del|elif|else|except)\>"
 KEYWORD:  "\<(exec|finally|for|from|global|if|import|in|is|lambda|not|or)\>"
 KEYWORD:  "\<(pass|print|raise|return|try|while|with|yield|None)\>"
-
 KEYWORD:  "\<(DEF|ELIF|ELSE|IF)\>"
-KEYWORD:  "\<(cdef|cimport|cpdef|cppclass|ctypedef|extern|include|namespace|property|struct)\>"
+KEYWORD:  "\<(cdef|cimport|cpdef|cppclass|ctypedef|extern|include)\>"
+KEYWORD:  "\<(namespace|property|struct)\>"
 TYPE:     "\<(bint|char|double|int|public|void|unsigned)\>"
-FUNCTION: "def [ 0-9A-Z_]+"
-FUNCTION: "cpdef [ 0-9A-Z_]+\(.*?\):"
-FUNCTION: "cdef cppclass [ 0-9A-Z_]+\(.*?\):"
-
-+FUNCTION
-OPERATOR: "[.:;,+*|=!\%@]" "<" ">" "/" "-" "&"
-MACRO:    "@.*"
+OPERATOR: "[.:;,+*|=!\%@<>/&-]"
+MACRO:    "@[A-Za-z0-9_]+"
 SECTION:  "__[A-Za-z0-9_]+__"
 BOOLEAN:  "\<(True|False)\>"
 +STRING
 STRING:   "['][^']*[^\\][']" "[']{3}.*[^\\][']{3}"
 STRING:   "["][^"]*[^\\]["]" "["]{3}.*[^\\]["]{3}"
-STRING:   start=""""[^"]" end=""""" start="'''[^']" end="'''"
+STRING:   start=""""[^"]" end="""""
+STRING:   start="'''[^']" end="'''"
 ESCAPE:   "\\.?"
-+TODO
 +HASHCOMMENT
++TODO
 +LINT
