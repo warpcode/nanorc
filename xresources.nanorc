@@ -1,4 +1,4 @@
-syntax "xdefaults" "X(defaults|resources)$"
+syntax "xresources" "X(defaults|resources)$"
 
 TYPE:     "^[[:alnum:]]+\*"
 VARIABLE: "\*[[:alnum:]]+\:"
