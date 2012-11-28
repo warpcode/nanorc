@@ -15,4 +15,5 @@ REGEXP:   "/[^*]([^/]|(\\/))*[^\\]/[gim]*"
 +STRING
 ESCAPE:   "\\[0-7][0-7]?[0-7]?|\\x[0-9a-fA-F]+|\\[bfnrt'"\?\\]"
 +CCOMMENT
++TODO
 +LINT

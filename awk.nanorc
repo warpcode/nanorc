@@ -20,4 +20,5 @@ REGEXP:   "/.*[^\]/"
 +STRING
 ESCAPE:   "\\."
 +HASHCOMMENT
++TODO
 +LINT

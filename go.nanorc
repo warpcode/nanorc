@@ -13,4 +13,5 @@ OPERATOR: "[-+/*=<>!~%&|^]|:="
 NUMBER:   "\<([0-9]+|0x[0-9a-fA-F]*)\>|'.'"
 +STRING
 +CCOMMENT
++TODO
 +LINT

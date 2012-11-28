@@ -25,4 +25,5 @@ FUNCTION: "[a-z-]*(-[a-z]+)?\(" "\(|\)"
 +STRING
 
 COMMENT:  start="/\*" end="\*/"
++TODO
 +LINT

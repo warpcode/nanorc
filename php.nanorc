@@ -11,4 +11,5 @@ KEYWORD:  "\<(continue|break|return|else|elseif|case|default|switch)\>"
 +STRING
 VARIABLE: "\$[A-Za-z_][A-Za-z0-9_]*"
 +CCOMMENT
++TODO
 +LINT

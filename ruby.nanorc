@@ -6,4 +6,5 @@ REGEXP:  "/([^/]|(\\/))*/[iomx]*" "%r\{([^}]|(\\}))*\}[iomx]*"
 +STRING
 +HASHCOMMENT
 COMMENT: start="^=begin$" end="^=end$"
++TODO
 +LINT

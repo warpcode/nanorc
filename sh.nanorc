@@ -12,4 +12,5 @@ VARIABLE: "\$\{?[A-Za-z0-9_!@#$*?-]+\}?|`[^`]*`"
 STRING:   "'(\\.|[^'])*'"
 ESCAPE:   "\\.?"
 +HASHCOMMENT
++TODO
 +LINT
