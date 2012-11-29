@@ -9,7 +9,7 @@ s|^REGEXP:|color magenta|
 s|^VARIABLE:|color brightyellow|
 s|^OPERATOR:|color red|
 s|^KEYWORD:|color brightblack|
-s|^~KEYWORD:|icolor green|
+s|^~KEYWORD:|icolor brightblack|
 s|^MACRO:|color brightyellow|
 s|^ESCAPE:|color magenta|
 s|^WARNING:|color brightwhite,red|
