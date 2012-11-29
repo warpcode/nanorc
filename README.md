@@ -71,6 +71,11 @@ This system helps to keep colors uniform across different languages and
 also to keep the definitions clear and maintainable, which is something that
 becomes quite awkward using only plain [nanorc] files.
 
+**Note:** if `~/.nanotheme` exists it will be used as a custom theme, in
+place of [theme.sed]. A custom theme may also be specified by installing
+with `make THEME=your-custom-theme.sed`. Themes must be valid sed scripts,
+defining *all* color codes found in [theme.sed] in order to work correctly.
+
 Compatibility
 -------------
 
