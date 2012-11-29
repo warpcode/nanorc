@@ -2,13 +2,13 @@ s|^PLAIN:|color black|
 s|^FUNCTION:|color brightblue|
 s|^STRING:|color yellow|
 s|^COMMENT:|color cyan|
-s|^TYPE:|color brightgreen|
+s|^TYPE:|color green|
 s|^BOOLEAN:|color brightcyan|
 s|^NUMBER:|color blue|
 s|^REGEXP:|color magenta|
 s|^VARIABLE:|color brightyellow|
 s|^OPERATOR:|color red|
-s|^KEYWORD:|color green|
+s|^KEYWORD:|color brightblack|
 s|^~KEYWORD:|icolor green|
 s|^MACRO:|color brightyellow|
 s|^ESCAPE:|color magenta|
