@@ -12,6 +12,7 @@ KEYWORD:  "\<(for|range|if|else|case|default|switch|continue|break|return)\>"
 OPERATOR: "[-+/*=<>!~%&|^]|:="
 NUMBER:   "\<([0-9]+|0x[0-9a-fA-F]*)\>|'.'"
 +STRING
+STRING:   "`(\\.|[^`])*`"
 +CCOMMENT
 +TODO
 +LINT
