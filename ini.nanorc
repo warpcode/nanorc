@@ -1,8 +1,8 @@
-syntax "ini" "\.(ini|desktop|override)$"
+syntax "ini" "\.(ini|desktop|override)$" "mimeapps\.list$"
 
-OPERATOR: "[=;]|\[|\]"
 +BOOLEAN
 +INI
+OPERATOR: "[=;]"
 +STRING
 +HASHCOMMENT
 +LINT
