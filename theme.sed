@@ -12,5 +12,6 @@ s|^KEYWORD:|color brightblack|
 s|^~KEYWORD:|icolor brightblack|
 s|^MACRO:|color brightyellow|
 s|^ESCAPE:|color magenta|
+s|^JUMP:|color brightred|
 s|^WARNING:|color brightwhite,red|
 s|^SECTION:|color brightmagenta|
