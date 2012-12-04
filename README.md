@@ -53,11 +53,11 @@ names or [mixins], instead of hard-coded colors.
 
 For example, the following named rule:
 
-    KEYWORD: "\<(if|else|return)\>"
+    TYPE: "int|bool|string"
 
 becomes:
 
-    color green "\<(if|else|return)\>"
+    color green "int|bool|string"
 
 and the following "mixin":
 
