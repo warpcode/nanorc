@@ -5,7 +5,7 @@ TYPE:     "\<(a|abbr|address|area|article|aside|audio|b|base|bdo|blockquote|body
 OPERATOR: "[>+~*]"
 VARIABLE: "[.#][A-Za-z_][A-Za-z0-9_-]*"
 OPERATOR: ":(active|focus|hover|link|visited|first-child|lang|valid|invalid|not|selection)\>"
-OPERATOR: ":(after|before|first-line|first-letter|root)\>"
+OPERATOR: ":(after|before|first-line|first-letter|root|target)\>"
 STRING:   "\[[^\[]*\]"
 PLAIN:    start="\{" end="\}"
 
