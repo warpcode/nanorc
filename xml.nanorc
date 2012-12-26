@@ -4,7 +4,7 @@ header "<\?xml"
 SECTION:  start="<" end=">"
 KEYWORD:  " [a-z_-]+="
 +STRING
-ESCAPE:   "&[^;]*;"
+ESCAPE:   "&(#[0-9]+|[A-Za-z]+);"
 COMMENT:  start="<!--" end="-->"
 COMMENT:  start="<!DOCTYPE" end=">"
 +LINT
