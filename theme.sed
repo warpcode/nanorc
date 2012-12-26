@@ -15,3 +15,5 @@ s|^ESCAPE:|color magenta|
 s|^JUMP:|color brightred|
 s|^WARNING:|color brightwhite,red|
 s|^SECTION:|color brightmagenta|
+s|^TAG:|color brightmagenta|
+s|^ATTRIBUTE:|color magenta|
