@@ -1,16 +1,21 @@
-function main(...)
-    -- Boolean, multiple assignment
-    local yes, no = true, false
+#!/usr/bin/lua
+-- Lua syntax example
 
-    -- Numbers
-    local num, hex = 102.224e-11, 0xbada55
-
-    -- Table constructor, vararg, nil
-    local tab = {..., "One", "Two", "Three", key="Value", nil}
-
-    -- Multiple return, table access
-    return yes, hex, tab.key, tab[1]
+function example(x)
+    for k, v in pairs(x) do
+        local r
+        if type(v) == "string" then
+            r = v .. " World"
+        elseif not v or v == 0xbada55 * 10 then
+            r = nil
+            break
+        else
+            r = false
+        end
+        print(r)
+    end
+    return true
 end
 
--- Function call, optional parentheses
-print(main "Hello World")
+local t = {a="Hello", b=9, c=false}
+example(t)
