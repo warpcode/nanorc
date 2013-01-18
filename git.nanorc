@@ -1,4 +1,4 @@
-syntax "gitconfig" "gitconfig$|\.git/config$"
+syntax "gitconfig" "git(config|modules)$|\.git/config$"
 
 +BOOLEAN
 +INI
