@@ -1,4 +1,4 @@
-syntax "ini" "\.(ini|desktop|override)$" "mimeapps\.list$"
+syntax "ini" "\.(ini|desktop|override)$" "(mimeapps\.list|pinforc)$"
 
 +BOOLEAN
 +INI
