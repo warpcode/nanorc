@@ -1,2 +1,2 @@
 KEYWORD: "^[[:space:]]*[^=]*="
-SECTION: "^\[.*\]$"
+SECTION: "^[[:space:]]*\[.*\]$"
