@@ -24,4 +24,5 @@ ifdef BSDREGEX
 endif
 
 
+include build.mk
 .PHONY: ~/.nanorc
