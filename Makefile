@@ -15,6 +15,10 @@ ifdef OLDNANO
   FILTER += | sed -e '/^header/d;/^bind/d;/^set undo/d'
 endif
 
+ifndef POSLOG
+  FILTER += | sed -e '/^set poslog/d'
+endif
+
 ifdef TEXT
   FILTER += | sed -e 's|^color \(bright\)\{0,1\}black|color \1$(TEXT)|'
 endif
