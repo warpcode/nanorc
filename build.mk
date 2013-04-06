@@ -1,4 +1,4 @@
-build: $(addprefix build/, $(wildcard *.nanorc))
+generate: $(addprefix build/, $(wildcard *.nanorc))
 
 build/%.nanorc: %.nanorc mixins/*.nanorc $(THEME) | build/
 	@sed -f mixins.sed $< | sed -f $(THEME) $(FILTER) > $@
@@ -11,4 +11,4 @@ clean:
 	rm -rf build/
 
 
-.PHONY: build clean
+.PHONY: generate clean
