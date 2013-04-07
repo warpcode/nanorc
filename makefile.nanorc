@@ -16,6 +16,7 @@ VARIABLE: "\$+(\{[^} ]+\}|\([^) ]+\))"
 VARIABLE: "\$[@^<*?%|+]|\$\([@^<*?%+-][DF]\)"
 ESCAPE:   "\$\$|\\.?"
 +HASHCOMMENT
+COMMENT:  "^	@#.*"
 
 # Show trailing whitespace
 color ,green "[[:space:]]+$"
