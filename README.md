@@ -15,11 +15,11 @@ Screenshots:
 
 #### Editing HTML:
 
-![HTML Screenshot](http://craigbarnes.github.com/nanorc/HTML.png)
+![HTML Screenshot](http://craigbarnes.github.io/nanorc/HTML.png)
 
 #### Editing C:
 
-![C Screenshot](http://craigbarnes.github.com/nanorc/C.png)
+![C Screenshot](http://craigbarnes.github.io/nanorc/C.png)
 
 Installation
 ------------
