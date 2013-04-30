@@ -15,7 +15,7 @@ ifdef OLDNANO
   FILTER += | sed -e '/^header/d;/^bind/d;/^set undo/d'
 endif
 
-ifndef POSLOG
+ifneq ($(shell nano -h | grep '\-\-poslog' >/dev/null && echo 1),1)
   FILTER += | sed -e '/^set poslog/d'
 endif
 
