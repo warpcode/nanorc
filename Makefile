@@ -3,15 +3,14 @@ THEME = theme.sed
 ~/.nanorc: *.nanorc mixins/*.nanorc $(THEME)
 	cat *.nanorc | sed -f mixins.sed | sed -f $(THEME) $(FILTER) > $@
 
+
 ifeq ($(shell test -f ~/.nanotheme && echo 1),1)
   THEME = ~/.nanotheme
 endif
 
-ifeq ($(shell uname),Darwin)
-  OLDNANO = 1
-endif
-
-ifdef OLDNANO
+# Disable some unsupported features if nano version is earlier than 2.2
+NANOVER = $(shell nano -V | sed -n '1s/.* version \([0-9.]\+\) .*/\1/p')
+ifeq ($(shell printf "2.2\n$(NANOVER)" | sort -nr | head -1),2.2)
   FILTER += | sed -e '/^header/d;/^bind/d;/^set undo/d'
 endif
 
