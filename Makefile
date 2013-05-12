@@ -11,9 +11,15 @@ endif
 # Disable some unsupported features if nano version is earlier than 2.2
 NANOVER = $(shell nano -V | sed -n '1s/.* version \([0-9.]\+\) .*/\1/p')
 ifeq ($(shell printf "2.2\n$(NANOVER)" | sort -nr | head -1),2.2)
-  FILTER += | sed -e '/^header/d;/^bind/d;/^set undo/d'
+  FILTER += | sed -e '/^header/d;/^bind/d'
 endif
 
+# Remove "set undo" option if not supported
+ifneq ($(shell nano -h | grep '\-\-undo' >/dev/null && echo 1),1)
+  FILTER += | sed -e '/^set undo/d'
+endif
+
+# Remove "set poslog" option if not supported
 ifneq ($(shell nano -h | grep '\-\-poslog' >/dev/null && echo 1),1)
   FILTER += | sed -e '/^set poslog/d'
 endif
