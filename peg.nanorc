@@ -6,6 +6,6 @@ OPERATOR: "[-+*?^/!&]|->|<-|=>"
 MACRO:    "%[A-Za-z][A-Za-z0-9_]*"
 REGEXP:   "\[[^]]*\]"
 +STRING
-COMMENT:  "[[:space:]])\-\-.*$"
+COMMENT:  "(^|[[:space:]])\-\-.*$"
 +TODO
 +LINT
