@@ -90,23 +90,23 @@ defining *all* color codes found in [theme.sed] in order to work correctly.
 Compatibility
 -------------
 
+### Varying support for nanorc features
+
+The build process will automatically removes any [nanorc] commands that it
+detects to be unsupported by the installed version of nano. It will do this
+at the feature level where possible (e.g. undo/redo support) or otherwise
+make a best guess based on the version number.
+
+Some features can be disabled at compile-time, even if theoretically
+"supported" by a given version, so in rare cases you my have to remove some
+lines manually (usually the ones in `main.nanorc`).
+
 ### Interaction with `/etc/nanorc` on Debian/Ubuntu/Arch/...
 
 If syntax highlighting fails, try removing any `include` or `syntax` lines
 from `/etc/nanorc`. There appears to be [a bug in older versions of nano][5]
 that causes highlighting to fail when `/etc/nanorc` and `~/.nanorc` both
 exist and contain active `syntax` rules.
-
-### Disabled features on OS X
-
-The current builds of Nano included with OS X are quite old and lack support
-for various [nanorc] features used by this project. To work around this issue,
-when installing on OS X, the build process will automatically strip out the
-following features:
-
-* All `header` commands
-* All `bind` commands
-* The `set undo` option
 
 ### Regular expression workaround on OS X and *BSD
 
