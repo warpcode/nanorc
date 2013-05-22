@@ -46,8 +46,8 @@ or changed according to preference. The default bindings try to stay close
 to common GUI conventions where possible (e.g. `Ctrl+S` for save, `Ctrl+O`
 for open).
 
-Note: key bindings are automatically disabled on OS X (see the
-"Compatibility" section below).
+Note: key bindings are automatically disabled when using nano versions
+earlier than 2.2 (see the "Compatibility" section below).
 
 ### Warnings
 
