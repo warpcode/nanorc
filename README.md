@@ -92,7 +92,7 @@ Compatibility
 
 ### Varying support for nanorc features
 
-The build process will automatically removes any [nanorc] commands that it
+The build process will automatically remove any [nanorc] commands that it
 detects to be unsupported by the installed version of nano. It will do this
 at the feature level where possible (e.g. undo/redo support) or otherwise
 make a best guess based on the version number.
