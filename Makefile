@@ -9,9 +9,9 @@ ifeq ($(shell test -f ~/.nanotheme && echo 1),1)
 endif
 
 # Disable some unsupported features if nano version is earlier than 2.2
-NANOVER = $(shell nano -V | sed -n '1s/.* version \([0-9.]\+\) .*/\1/p')
+NANOVER = $(shell nano -V | sed -n 's/^.* version \([0-9\.]*\).*/\1/p')
 ifeq ($(shell printf "2.2\n$(NANOVER)" | sort -nr | head -1),2.2)
-  FILTER += | sed -e '/^\(header\|bind\|unbind\)/d'
+  FILTER += | sed -e '/^header/d;/^bind/d;/^unbind/d'
 endif
 
 # Remove "set undo" option if not supported
