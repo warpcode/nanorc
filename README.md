@@ -36,7 +36,7 @@ installing, using `make install TEXT=color`, where `color` must be one of:
 
 After installation, use `nano examples/*` to test if everything is
 working properly. If some or all of the files aren't highlighted properly,
-see the "Compatibility" section below.
+see the FAQ below.
 
 Theme System
 ------------
@@ -70,17 +70,27 @@ place of [theme.sed]. A custom theme may also be specified by installing
 with `make THEME=your-custom-theme.sed`. Themes must be valid sed scripts,
 defining *all* color codes found in [theme.sed] in order to work correctly.
 
-Compatibility
--------------
+FAQ
+----
 
-### Interaction with `/etc/nanorc` on Debian/Ubuntu/Arch/...
+### Why did the install location change / Where did the old key bindings go?
 
-If syntax highlighting fails, try removing any `include` or `syntax` lines
-from `/etc/nanorc`. There appears to be [a bug in older versions of nano][5]
-that causes highlighting to fail when `/etc/nanorc` and `~/.nanorc` both
-exist and contain active `syntax` rules.
+The old settings and key bindings file was deleted and the Makefile now
+installs *just* the syntax definitions to `~/.nano/syntax.nanorc` (as
+opposed to overwriting `~/.nanorc`). It's expected that users maintain their
+own settings and key bindings in `~/.nanorc` and `include` the new syntax
+file, as detailed in the "Installation" section.
 
-### Regular expression workaround on OS X and *BSD
+See also: [issue #25], [example ~/.nanorc file].
+
+### Why does syntax highlighting only work for a subset of supported files?
+
+There appears to be a [bug][issue #5] in older versions of nano that causes
+highlighting to fail when `/etc/nanorc` and `~/.nanorc` both contain
+`syntax` rules. The usual workaround is to remove all `syntax` and `include`
+lines from `/etc/nanorc`.
+
+### Why do I get wierd errors when running nano < 2.1.5 on *BSD systems?
 
 In order to reliably highlight keywords, this projects makes heavy use of
 the GNU regex word boundary extensions (`\<` and `\>`). BSD implementations
@@ -95,4 +105,6 @@ file itself can be translated by installing with `make BSDREGEX=1`.
 [theme.sed]: https://github.com/craigbarnes/nanorc/tree/master/theme.sed
 [mixins.sed]: https://github.com/craigbarnes/nanorc/tree/master/mixins.sed
 [mixins]: https://github.com/craigbarnes/nanorc/tree/master/mixins
-[5]: https://github.com/craigbarnes/nanorc/issues/5 "between 2.2.6 and 2.3.2"
+[issue #5]: https://github.com/craigbarnes/nanorc/issues/5
+[issue #25]: https://github.com/craigbarnes/nanorc/issues/25
+[example ~/.nanorc file]: https://github.com/craigbarnes/dotfiles/blob/master/dotfiles/nanorc#L54
