@@ -1,27 +1,29 @@
 THEME = theme.sed
 
-~/.nanorc: *.nanorc mixins/*.nanorc $(THEME)
-	cat *.nanorc | sed -f mixins.sed | sed -f $(THEME) $(FILTER) > $@
+install: ~/.nano/syntax.nanorc
+
+install-separate: $(addprefix ~/.nano/syntax/, $(wildcard *.nanorc))
+
+~/.nano/syntax.nanorc: *.nanorc mixins/*.nanorc $(THEME) | ~/.nano/
+	@sed -f mixins.sed *.nanorc | sed -f $(THEME) $(FILTER) > $@
+	@echo 'Installed: $@'
+
+~/.nano/syntax/%.nanorc: %.nanorc mixins/*.nanorc $(THEME) | ~/.nano/syntax/
+	@sed -f mixins.sed $< | sed -f $(THEME) $(FILTER) > $@
+	@echo 'Installed: $@'
+
+~/.nano/ ~/.nano/syntax/:
+	@mkdir -p $@
 
 
 ifeq ($(shell test -f ~/.nanotheme && echo 1),1)
   THEME = ~/.nanotheme
 endif
 
-# Disable some unsupported features if nano version is earlier than 2.2
+# Remove "header" directives if not supported (nano versions < 2.2)
 NANOVER = $(shell nano -V | sed -n 's/^.* version \([0-9\.]*\).*/\1/p')
 ifeq ($(shell printf "2.2\n$(NANOVER)" | sort -nr | head -1),2.2)
-  FILTER += | sed -e '/^header/d;/^bind/d;/^unbind/d'
-endif
-
-# Remove "set undo" option if not supported
-ifneq ($(shell nano -h | grep '\-\-undo' >/dev/null && echo 1),1)
-  FILTER += | sed -e '/^set undo/d'
-endif
-
-# Remove "set poslog" option if not supported
-ifneq ($(shell nano -h | grep '\-\-poslog' >/dev/null && echo 1),1)
-  FILTER += | sed -e '/^set poslog/d'
+  FILTER += | sed -e '/^header/d'
 endif
 
 ifdef TEXT
@@ -33,5 +35,4 @@ ifdef BSDREGEX
 endif
 
 
-include build.mk
-.PHONY: ~/.nanorc
+.PHONY: install install-separate
