@@ -35,4 +35,4 @@ ifdef BSDREGEX
 endif
 
 
-.PHONY: install install-separate
+.PHONY: install install-separate ~/.nano/syntax.nanorc
