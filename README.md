@@ -24,8 +24,8 @@ Screenshots:
 Installation
 ------------
 
-Using `make install` will concatenate all syntax files together and
-install to `~/.nano/syntax.nanorc`. You can then include this file into
+Using `make install` will concatenate all syntax files together and install
+to `~/.nano/syntax.nanorc`. You can then [include][example] this file into
 your main `~/.nanorc` configuration by adding the line:
 
     include ~/.nano/syntax.nanorc
@@ -79,9 +79,9 @@ The old settings and key bindings file was deleted and the Makefile now
 installs *just* the syntax definitions to `~/.nano/syntax.nanorc` (as
 opposed to overwriting `~/.nanorc`). It's expected that users maintain their
 own settings and key bindings in `~/.nanorc` and `include` the new syntax
-file, as detailed in the "Installation" section.
+file, as detailed under "Installation" above.
 
-See also: [issue #25], [example ~/.nanorc file].
+See also: [issue #25], [example ~/.nanorc file][example].
 
 ### Why does syntax highlighting only work for a subset of supported files?
 
@@ -107,4 +107,4 @@ file itself can be translated by installing with `make BSDREGEX=1`.
 [mixins]: https://github.com/craigbarnes/nanorc/tree/master/mixins
 [issue #5]: https://github.com/craigbarnes/nanorc/issues/5
 [issue #25]: https://github.com/craigbarnes/nanorc/issues/25
-[example ~/.nanorc file]: https://github.com/craigbarnes/dotfiles/blob/master/dotfiles/nanorc#L54
+[example]: https://github.com/craigbarnes/dotfiles/blob/master/dotfiles/nanorc#L54
