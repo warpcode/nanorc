@@ -8,12 +8,11 @@ syntax "gitconfig" "git(config|modules)$|\.git/config$"
 
 syntax "git-editmsg" "(COMMIT|TAG)_EDITMSG$"
 
-ESCAPE:   "\\."
-+HASHCOMMENT
-+LINT
+COMMENT:   "^#.*$"
+color ,red "[[:space:]]+$"
 
 syntax "git-rebase" "git-rebase-todo$"
 
 KEYWORD: "^(edit|fixup|pick|reword|squash|exec|[efprsx])\>"
 NUMBER:  "\<[0-9a-f]{7,40}\>"
-+HASHCOMMENT
+COMMENT: "^#.*"
