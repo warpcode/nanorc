@@ -20,9 +20,9 @@ ifeq ($(shell test -f ~/.nanotheme && echo 1),1)
   THEME = ~/.nanotheme
 endif
 
-# Remove "header" directives if not supported (nano versions < 2.2)
+# Remove "header" directives if not supported (introduced in nano 2.1.6)
 NANOVER = $(shell nano -V | sed -n 's/^.* version \([0-9\.]*\).*/\1/p')
-ifeq ($(shell printf "2.2\n$(NANOVER)" | sort -nr | head -1),2.2)
+ifeq ($(shell printf "2.1.5\n$(NANOVER)" | sort -nr | head -1),2.1.5)
   FILTER += | sed -e '/^header/d'
 endif
 
