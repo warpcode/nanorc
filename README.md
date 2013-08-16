@@ -97,7 +97,7 @@ the GNU regex word boundary extensions (`\<` and `\>`). BSD implementations
 also have these extensions but use a different, incompatible syntax
 (`[[:<:]]` and `[[:>:]]`). Since version 2.1.5, nano can automatically
 translate the GNU syntax to BSD syntax at run-time, but for the benefit of
-people running a pre-2.1.5 version of nano on OS X or *BSD, the `~/.nanorc`
+people running a pre-2.1.5 version of nano on OS X or *BSD, the `.nanorc`
 file itself can be translated by installing with `make BSDREGEX=1`.
 
 ### Why not use `\s` instead of the verbose `[[:space:]]` pattern?
