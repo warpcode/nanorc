@@ -6,7 +6,9 @@ install-separate: $(addprefix ~/.nano/syntax/, $(wildcard *.nanorc))
 
 ~/.nano/syntax.nanorc: *.nanorc mixins/*.nanorc $(THEME) | ~/.nano/
 	@sed -f mixins.sed *.nanorc | sed -f $(THEME) $(FILTER) > $@
-	@echo 'Installed: $@'
+	@printf 'Installed: $@\n\n'
+	@printf 'Add the following line to your ~/.nanorc to enable:\n\n'
+	@printf '  include $@\n\n'
 
 ~/.nano/syntax/%.nanorc: %.nanorc mixins/*.nanorc $(THEME) | ~/.nano/syntax/
 	@sed -f mixins.sed $< | sed -f $(THEME) $(FILTER) > $@
