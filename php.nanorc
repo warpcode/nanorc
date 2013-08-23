@@ -1,5 +1,5 @@
 syntax "php" "\.php[2345s~]?$"
-header "^(//|/\*).*[Pp][Hh][Pp]"
+header "^(//|/\*).*[Pp][Hh][Pp]|<\?php\>"
 
 OPERATOR: "[-+/*=<>?:!~%&|]"
 SECTION:  "(<\?(php)?|\?>)"
