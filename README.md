@@ -103,7 +103,7 @@ file itself can be translated by installing with `make BSDREGEX=1`.
 ### Why not use `\s` instead of the verbose `[[:space:]]` pattern?
 
 Because nano compiles against the platform's native regex library and some
-platforms don't support `\s` (as it's not required by [POSIX ERE]).
+platforms don't support `\s` (as it's not required by POSIX [ERE]).
 
 Unlicense
 ---------
@@ -141,4 +141,4 @@ For more information, please refer to <http://unlicense.org/>
 [mixins]: https://github.com/craigbarnes/nanorc/tree/master/mixins
 [issue #5]: https://github.com/craigbarnes/nanorc/issues/5
 [issue #25]: https://github.com/craigbarnes/nanorc/issues/25
-[POSIX ERE]: http://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap09.html#tag_09_04
+[ERE]: http://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap09.html#tag_09_04
