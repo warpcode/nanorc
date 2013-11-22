@@ -81,7 +81,7 @@ opposed to overwriting `~/.nanorc`). It's expected that users maintain their
 own settings and key bindings in `~/.nanorc` and `include` the new syntax
 file, as detailed under "Installation" above.
 
-See also: [issue #25], [example ~/.nanorc file][example].
+See also: [issue #25].
 
 ### Why does syntax highlighting only work for a subset of supported files?
 
@@ -141,5 +141,4 @@ For more information, please refer to <http://unlicense.org/>
 [mixins]: https://github.com/craigbarnes/nanorc/tree/master/mixins
 [issue #5]: https://github.com/craigbarnes/nanorc/issues/5
 [issue #25]: https://github.com/craigbarnes/nanorc/issues/25
-[example]: https://github.com/craigbarnes/dotfiles/blob/master/dotfiles/nanorc#L54
 [POSIX ERE]: http://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap09.html#tag_09_04
