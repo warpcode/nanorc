@@ -3,6 +3,19 @@ nanorc
 
 Improved syntax highlighting definitions for [GNU nano].
 
+Project Status
+--------------
+
+I am no longer using nano as my editor and hence have little motivation to
+continue working on this project. I will answer GitHub issues and fix
+existing bugs, but beyond that, consider this repository only an archive.
+
+Everything in the repository is in the Public Domain. Feel free to fork
+it and/or use the files for any purpose.
+
+<small>(I highly recommend [dex](https://github.com/tihirvon/dex) as a
+simple but much more capable editor.)</small>
+
 Description
 -----------
 
